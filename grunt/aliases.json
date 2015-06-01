@@ -1,0 +1,29 @@
+{
+  "default": [
+      "scsslint",
+      "sass",
+      "postcss",
+      "cssmin",
+      "sprite",
+      "jshint:before",
+      "modernizr",
+      "concat",
+      "uglify",
+      "jshint:after",
+      "spritegen",
+      "svg2png",
+      "respimages",
+      "imagemin",
+      "phplint",
+      "clean",
+      "notify:build"
+  ],
+  "docs": [
+    "jsdoc",
+    "sassdoc"
+  ],
+  "build": [
+    "default",
+    "watch"
+  ]
+}
