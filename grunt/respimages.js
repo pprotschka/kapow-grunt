@@ -8,7 +8,7 @@ module.exports = {
       expand: true,
       src: ['**/*.{jpg,png,gif}'],
       cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>',
-      custom_dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.img_dir %>/{%= name %}/'
+      custom_dest: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/{%= name %}/'
     }]
   },
   newer: {
@@ -19,7 +19,7 @@ module.exports = {
       expand: true,
       src: ['**/*.{jpg,png,gif}'],
       cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>',
-      custom_dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.img_dir %>{%= name %}/'
+      custom_dest: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/{%= name %}/'
     }]
   }
 };
