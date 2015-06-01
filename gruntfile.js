@@ -6,8 +6,9 @@ module.exports = function(grunt) {
           jitGrunt: true,
           // These help Grunt play nicely with certain plugins
           staticMappings: {
+            respimages: 'grunt-responsive-images',
             scsslint: 'grunt-scss-lint',
-            respimages: 'grunt-responsive-images'
+            spritegen: 'grunt-responsive-images'
           }
       },
       // Anything you define within the main 'data' object can be accessed
