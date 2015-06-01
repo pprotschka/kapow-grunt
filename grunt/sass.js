@@ -1,7 +1,7 @@
 module.exports = {
   sass: {
     options: {
-      sourcemap: true,
+      // sourcemap: true,
       style: 'compressed'
     },
     files: [{

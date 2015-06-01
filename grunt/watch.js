@@ -20,6 +20,6 @@ module.exports = {
   },
   images: {
     files: ['<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{png,jpg,svg,gif}'],
-    tasks: ['newer:imagemin', 'notify:images']
+    tasks: ['respimages', 'newer:imagemin', 'notify:images']
   }
 };

@@ -2,6 +2,7 @@ module.exports = {
   options: {
     jshintrc: 'grunt/config/jshintrc.json',
     reporter: require('jshint-stylish'),
+    force: true
   },
   before: {
     options: {

@@ -6,9 +6,9 @@ module.exports = function(grunt) {
           jitGrunt: true,
           // These help Grunt play nicely with certain plugins
           staticMappings: {
-            respimages: 'grunt-responsive-images',
+            responsive_images: 'grunt-responsive-images',
             scsslint: 'grunt-scss-lint',
-            spritegen: 'grunt-responsive-images'
+            spritegen: 'grunt-sprite-generator'
           }
       },
       // Anything you define within the main 'data' object can be accessed
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 
         // Array of paths to WordPress plugin files that require linting
         wpPlugins: [
-          '<%= wpInfo.wp_content %>/plugins/plugin-name/**/*.php',
+          '<%= wpInfo.wp_content %>/plugins/mkdo-admin/**/*.php',
         ],
 
         // Array of paths to Javascript files that will be concatenated

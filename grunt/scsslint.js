@@ -4,7 +4,7 @@ module.exports = {
     colorizeOutput: true,
     compact: true,
     force: true,
-    config: 'grunt/config/scsslint.xml'
+    config: 'grunt/config/scsslint.yml',
     reporterOutput: 'reports/scsslint.xml',
   },
   src: [

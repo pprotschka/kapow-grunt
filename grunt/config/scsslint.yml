@@ -19,3 +19,7 @@ linters:
     enabled: false
   StringQuotes:
     enabled: false
+  EmptyRule:
+    enabled: false
+  ElsePlacement:
+    enabled: false

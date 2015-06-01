@@ -1,5 +1,5 @@
-{
-  "default": [
+module.exports = function(grunt) {
+    grunt.registerTask('default', [
       "scsslint",
       "sass",
       "postcss",
@@ -15,19 +15,5 @@
       "phplint",
       "clean",
       "notify:build"
-  ],
-  "docs": [
-    "jsdoc",
-    "sassdoc"
-  ],
-  "build": [
-    "default",
-    "watch"
-  ],
-  "sprite": [
-    "spritegen"
-  ],
-  "respimages": [
-    "responsive_images"
-  ]
-}
+    ]);
+};
