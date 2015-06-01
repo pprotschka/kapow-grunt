@@ -4,7 +4,7 @@ module.exports = {
       sourceMap: true
     },
     files: {
-      '<%= wpInfo.wp_content %>/themes/<%= wpInfo.wp_theme_name %>/style.css': 'assets/css/site.css'
+      '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/style.css': '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/site.css'
     }
   }
 };

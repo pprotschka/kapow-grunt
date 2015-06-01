@@ -6,9 +6,9 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: 'assets/scss',
+      cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>',
       src: ['*.scss'],
-      dest: 'assets/css',
+      dest: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
       ext: '.css'
     }]
   }

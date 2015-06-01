@@ -6,7 +6,7 @@ module.exports = {
       ]
     },
     dist: {
-      src: 'assets/css/site.css'
+      src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/site.css'
     }
   }
 };

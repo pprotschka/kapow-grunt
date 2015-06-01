@@ -1,7 +1,7 @@
 module.exports = {
   custom: {
     "devFile": "bower_components/modernizr/modernizr.js",
-    "outputFile": "assets/js/lib/modernizr-custom.js",
+    "outputFile": "<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js",
     "extra": {
         "shiv": true,
         "printshiv": true,
@@ -15,9 +15,9 @@ module.exports = {
 
     "files": {
         "src": [
-            'assets/**/*.scss',
-            'assets/**/*.js',
-            '!assets/js/modernizr-custom.js'
+            '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss',
+            '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
+            '!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js'
         ]
     }
   }
