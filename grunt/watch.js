@@ -29,9 +29,8 @@ module.exports = {
     ],
     tasks: ['jshint:before', 'modernizr', 'concat', 'uglify', 'jshint:after', 'clean', 'jsdoc', 'notify:scripts']
   },
-  // Note that we're not using the alias to call spritesmith here
   styles: {
     files: ['<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss'],
-    tasks: ['scsslint', "sprite", 'sass', 'postcss', 'cssmin', 'sassdoc', 'notify:styles']
+    tasks: ['scsslint', "spritesmith", 'sass', 'postcss', 'cssmin', 'sassdoc', 'notify:styles']
   }
 };
