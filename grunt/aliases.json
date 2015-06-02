@@ -8,6 +8,11 @@
     "phpdoc:all",
     "sassdoc"
   ],
+  "lint": [
+    "jshint",
+    "phplint:all",
+    "scsslint",
+  ],
   "respimages": [
     "responsive_images"
   ],
