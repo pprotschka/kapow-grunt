@@ -1,58 +1,73 @@
 module.exports = function(grunt) {
-
   require('load-grunt-config')(grunt, {
       init: true,
       jitGrunt: {
-          jitGrunt: true,
-          // These help Grunt play nicely with certain plugins
-          staticMappings: {
-            responsive_images: 'grunt-responsive-images',
-            scsslint: 'grunt-scss-lint',
-            spritegen: 'grunt-sprite-generator'
-          }
+        jitGrunt: true,
+        // These help Grunt play nicely with certain plugins
+        staticMappings: {
+          responsive_images: 'grunt-responsive-images',
+          scsslint: 'grunt-scss-lint',
+          sprite: "grunt-spritesmith"
+        }
       },
+      // -----------------------------------------------------------------------------
       // Anything you define within the main 'data' object can be accessed
       // both in the Gruntfile and in the individual task configurations e.g.
-      // <%= wpInfo.theme_name %>
+      // <%= wpInfo.theme_name %> , <%= siteInfo.assets_path %> etc.
+      // -----------------------------------------------------------------------------
       data: {
+        // -------------------------------------
         // Site specific settings
+        // -------------------------------------
         siteInfo: {
-          // Path to your assets folder - NO trailing slash
-          assets_path: 'assets',
-          // Asset directory names
-          img_dir: 'img',
-          js_dir: 'js',
-          sass_dir: 'sass',
-          css_dir: 'css'
+          fancy_name: 'Your Project',       // The 'fancy' name for your project e.g. 'My First Website'
+          docs_path: 'docs',                // Documentation path relative to the project root - NO trailing slash
+          reports_path: 'reports',          // Reports path relative to the project root - NO trailing slash
+          assets_path: 'assets',            // Assets path relative to the project root - NO trailing slash
+          img_dir: 'img',                   // Directory containing image assets
+          js_dir: 'js',                     // Directory containing Javascript assets
+          sass_dir: 'sass',                 // Directory containing Sass assets
+          css_dir: 'css'                    // Directory containing CSS assets
         },
 
+        // -------------------------------------
         // WordPress specific settings
+        // -------------------------------------
         wpInfo: {
-          theme_name: 'theme-name',
-          wp_content: 'htdocs/wp-content',
-          // Asset directory names in your theme
-          img_dir: 'img',
-          js_dir: 'js',
+          wp_content: 'htdocs/wp-content',  // Path to wp-content relative to the project root
+          theme_name: 'theme-name',         // WordPress theme directory name
+          img_dir: 'img',                   // Directory containing theme images
+          js_dir: 'js',                     // Directory containing theme Javascript
         },
 
-        // Array of paths to WordPress plugin files that require linting
+        // -------------------------------------
+        // Array of paths to WordPress plugin
+        // folders/files that require linting
+        // -------------------------------------
         wpPlugins: [
           '<%= wpInfo.wp_content %>/plugins/mkdo-admin/**/*.php',
         ],
 
-        // Array of paths to Javascript files that will be concatenated
+        // -------------------------------------
+        // Array of paths to Javascript files
         // for inclusion in the <head>
+        // -------------------------------------
         concatHead: [
-            '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
+          '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
         ],
 
-        // Array of paths to Javascript files that will be concatenated
+        // -------------------------------------
+        // Array of paths to Javascript files
         // for inclusion in the footer
+        // -------------------------------------
         concatFoot: [
-            '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
+          '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
         ],
 
-        // Define image sizes for use with the responsive images task
+        // -------------------------------------
+        // Define image sizes for use with the
+        // responsive images task
+        // -------------------------------------
         imgSizes: [
           {
             name: 'x-small',
@@ -102,4 +117,13 @@ module.exports = function(grunt) {
   });
   // Provides a summary of the time tasks have taken
   require('time-grunt')(grunt);
+
+  // Silences grunt-newer
+  // https://github.com/tschaub/grunt-newer/issues/52#issuecomment-59397284
+  var origLogHeader = grunt.log.header;
+    grunt.log.header = function(msg) {
+        if (!/newer(-postrun)?:/.test(msg)) {
+            origLogHeader.apply(this, arguments);
+        }
+    };
 };

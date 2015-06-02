@@ -2,31 +2,43 @@ module.exports = {
   build: {
     options: {
       title: 'Rebuild',
-      message: '<%= package.fancyName %> is ready to rock!'
+      message: '<%= siteInfo.fancy_name %> is ready to rock!'
     }
   },
-  code: {
+  code_plugins: {
     options: {
       title: 'PHP',
-      message: '<%= package.fancyName %> PHP is error free!'
+      message: '<%= siteInfo.fancy_name %> plugin PHP is error free!'
+    }
+  },
+  code_theme: {
+    options: {
+      title: 'PHP',
+      message: '<%= siteInfo.fancy_name %> theme PHP is error free!'
     }
   },
   scripts: {
     options: {
       title: 'Scripts',
-      message: '<%= package.fancyName %> scripts processed!'
+      message: '<%= siteInfo.fancy_name %> scripts processed!'
     }
   },
   styles: {
     options: {
       title: 'Styles',
-      message: '<%= package.fancyName %> styles processed!'
+      message: '<%= siteInfo.fancy_name %> styles processed!'
     }
   },
   images: {
     options: {
       title: 'Images',
-      message: '<%= package.fancyName %> images processed!'
+      message: '<%= siteInfo.fancy_name %> images processed!'
+    }
+  },
+  docs: {
+    options: {
+      title: 'Docs',
+      message: '<%= siteInfo.fancy_name %> docs processed!'
     }
   }
 };

@@ -3,23 +3,35 @@ module.exports = {
     livereload: true,
     spawn: false
   },
-  code: {
+  // phplint and phpdoc don't work with newer
+  code_plugins: {
+    files: ['<%= wpPlugins %>'],
+    tasks: ['phplint:plugins', 'phpdoc:plugins', 'notify:code_plugins']
+  },
+  code_theme: {
     files: ['<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php'],
-    tasks: ['newer:phplint', 'notify:code']
+    tasks: ['phplint:theme', 'phpdoc:theme', 'notify:code_theme']
+  },
+  // respimages doesn't require newer
+  images_jpg: {
+    files: ['<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.jpg'],
+    tasks: ['respimages', 'newer:imagemin', 'notify:images']
+  },
+  // svg2png doesn't work with newer
+  images_other: {
+    files: ['<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{png,svg,gif}'],
+    tasks: ['svg2png', 'newer:imagemin', 'notify:images']
   },
   scripts: {
     files: [
       '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
       '!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js'
     ],
-    tasks: ['newer:jshint:before', 'newer:modernizr', 'newer:concat', 'newer:uglify', 'newer:jshint:after', 'clean', 'notify:scripts']
+    tasks: ['jshint:before', 'modernizr', 'concat', 'uglify', 'jshint:after', 'clean', 'jsdoc', 'notify:scripts']
   },
+  // Note that we're not using the alias to call spritesmith here
   styles: {
     files: ['<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss'],
-    tasks: ['scsslint', 'sass', 'postcss', 'cssmin', 'spriteGenerator', 'notify:styles']
-  },
-  images: {
-    files: ['<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{png,jpg,svg,gif}'],
-    tasks: ['respimages', 'newer:imagemin', 'notify:images']
+    tasks: ['scsslint', "sprite", 'sass', 'postcss', 'cssmin', 'sassdoc', 'notify:styles']
   }
 };

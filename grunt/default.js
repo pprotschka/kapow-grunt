@@ -3,6 +3,7 @@ module.exports = function(grunt) {
       "scsslint",
       "sass",
       "postcss",
+      "spritesmith",
       "cssmin",
       "jshint:before",
       "modernizr",
@@ -11,9 +12,10 @@ module.exports = function(grunt) {
       "jshint:after",
       "svg2png",
       "respimages",
-      "imagemin",
-      "phplint",
+      "newer:imagemin",
+      "phplint:all",
       "clean",
+      "docs",
       "notify:build"
     ]);
 };

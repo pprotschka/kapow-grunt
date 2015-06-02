@@ -9,8 +9,8 @@ module.exports = {
     },
     files: [{
       expand: true,
-      src: ['**/*.{jpg,png,gif}'],
       cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>',
+      src: ['**/*.jpg'],
       custom_dest: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/{%= name %}/'
     }]
   }

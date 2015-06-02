@@ -6,7 +6,7 @@ module.exports = {
   },
   before: {
     options: {
-      reporterOutput: 'reports/jshint-before.txt'
+      reporterOutput: '<%= siteInfo.reports_path %>/jshint-before.txt'
     },
     src: [
     '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
@@ -15,7 +15,7 @@ module.exports = {
   },
   after: {
     options: {
-      reporterOutput: 'reports/jshint-after.txt'
+      reporterOutput: '<%= siteInfo.reports_path %>/jshint-after.txt'
     },
     src: ['<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.js_dir %>/**/*.js']
   }

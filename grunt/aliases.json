@@ -1,33 +1,17 @@
 {
-  "default": [
-      "scsslint",
-      "sass",
-      "postcss",
-      "cssmin",
-      "jshint:before",
-      "modernizr",
-      "concat",
-      "uglify",
-      "jshint:after",
-      "svg2png",
-      "respimages",
-      "imagemin",
-      "phplint",
-      "clean",
-      "notify:build"
-  ],
-  "docs": [
-    "jsdoc",
-    "sassdoc"
-  ],
   "build": [
     "default",
     "watch"
   ],
-  "sprite": [
-    "spritegen"
+  "docs": [
+    "jsdoc",
+    "phpdoc:all",
+    "sassdoc"
   ],
   "respimages": [
     "responsive_images"
+  ],
+  "spritesmith": [
+    "sprite"
   ]
 }

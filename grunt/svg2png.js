@@ -1,5 +1,5 @@
 module.exports = {
-  svg: {
+  svg2png: {
     files: [
       {
         // Trailing slash required here, unlike in other tasks!
