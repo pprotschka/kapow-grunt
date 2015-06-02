@@ -27,7 +27,7 @@ module.exports = {
       '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
       '!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js'
     ],
-    tasks: ['jshint:before', 'modernizr', 'concat', 'uglify', 'jshint:after', 'clean', 'jsdoc', 'notify:scripts']
+    tasks: ['jshint', 'modernizr', 'concat', 'uglify', 'clean', 'jsdoc', 'notify:scripts']
   },
   styles: {
     files: ['<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss'],
