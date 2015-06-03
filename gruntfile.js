@@ -28,6 +28,7 @@ module.exports = function(grunt) {
           js_dir: 'js',                     // Directory containing Javascript assets
           sass_dir: 'sass',                 // Directory containing Sass assets
           css_dir: 'css'                    // Directory containing CSS assets
+          sass_file: 'site'                 // Name of your main Sass file and consequent CSS file
         },
 
         // -------------------------------------

@@ -6,6 +6,6 @@ module.exports = {
       ]
     },
     dist: {
-      src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/site.css'
+      src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.sass_file %>.css'
     }
   }
