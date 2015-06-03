@@ -14,7 +14,7 @@ If you're not using this as part of the wider Kapow! set-up, you'll need to...
 
 2) Run `npm install` and `bower install modernizr` to get the Node dependencies and Modernizr respectively.
 
-3). If you intend to use GraphicsMagick you can install it by running `brew install GraphicsMagick` if you're on a Mac or alternatively visit the [GraphicsMagick downloads page](http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/).
+3). If you intend to use responsive images you will need GraphicsMagick: you can install it by running `brew install GraphicsMagick` if you're on a Mac or alternatively visit the [GraphicsMagick downloads page](http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/).
 
 You can skip this step if you don't intend to use it: just make sure that you comment out or remove the calls to `respimages` in `grunt/default.js` and `grunt/watch.js`.
 
