@@ -22,7 +22,7 @@ You can skip this step if you don't intend to use it: just make sure that you co
 
 If you don't wish to use either of the above, open `grunt/aliases.json` and remove them from the `lint` array.
 
-5) Finally, run `grunt` to perform an initial build of the project! 
+5) Finally, edit the settings in `gruntfile.js` to suit your project and run `grunt` to perform an initial build!
 
 You can also run `grunt build` to build & watch, `grunt docs` to generate JS, PHP and Sass documentation (assuming you're documenting your code of course) in the `docs/` folder or `grunt lint` to lint your JS, PHP and Sass with reports available in the `reports/` folder.
 
