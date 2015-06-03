@@ -18,7 +18,7 @@ If you're not using this as part of the wider Kapow! set-up, you'll need to...
 
 You can skip this step if you don't intend to use it: just make sure that you comment out or remove the calls to `respimages` in `grunt/default.js` and `grunt/watch.js`.
 
-4) Install SCSS Lint with `gem install scss-lint` and also [install phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html).
+4) If you intend to use SassDoc and PHPDoc you will need to install SCSS Lint with `gem install scss-lint` and also [install phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html).
 
 If you don't wish to use either of the above, open `grunt/aliases.json` and remove them from the `lint` array.
 
