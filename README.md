@@ -22,14 +22,34 @@ You can skip this step if you don't intend to use it: just make sure that you co
 
 If you don't wish to use either of the above, open `grunt/aliases.json` and remove them from the `lint` array.
 
-5) Finally, edit the settings in `gruntfile.js` to suit your project and run `grunt` to perform an initial build!
-
-You can also run `grunt build` to build & watch, `grunt docs` to generate JS, PHP and Sass documentation (assuming you're documenting your code of course) in the `docs/` folder or `grunt lint` to lint your JS, PHP and Sass with reports available in the `reports/` folder.
-
 **NOTE**: If you encounter permissions issues with any of the above installation commands you may need to run them as sudo e.g. `sudo gem install scss-lint'.
 
 ## Useage
 
+Edit the settings in `gruntfile.js` to suit your project and run `grunt` to perform an initial build!
+
+By default, Kapow! Grunt is built around the following folder structure:
+
+    project_root/
+      assets/
+        css/
+        img/
+        js/
+        sass/
+      bower_components/
+      docs/
+      grunt/
+      htdocs
+        /wp-content/
+          theme-name/
+            img/
+              s/
+      node_modules/
+      reports/
+
+However, with the exception of the `bower_components`, `grunt` and `node_modules` folders you can alter these paths in  `gruntfile.js` to suit your specific needs.
+
+You can run `grunt build` to build & watch, `grunt docs` to generate JS, PHP and Sass documentation (assuming you're documenting your code of course) in the `docs/` folder or `grunt lint` to lint your JS, PHP and Sass with reports available in the `reports/` folder.
 
 ## Changelog
 
