@@ -28,6 +28,8 @@ If you don't wish to use either of the above, open `grunt/aliases.json` and remo
 
 Edit the settings in `gruntfile.js` to suit your project and run `grunt` to perform an initial build!
 
+You can run `grunt build` to build & watch, `grunt docs` to generate JS, PHP and Sass documentation (assuming you're documenting your code of course) in the `docs/` folder or `grunt lint` to lint your JS, PHP and Sass with reports available in the `reports/` folder.
+
 By default, Kapow! Grunt is built around the following folder structure:
 
     project_root/
@@ -48,8 +50,6 @@ By default, Kapow! Grunt is built around the following folder structure:
       reports/
 
 However, with the exception of the `bower_components`, `grunt` and `node_modules` folders you can alter these paths in  `gruntfile.js` to suit your specific needs.
-
-You can run `grunt build` to build & watch, `grunt docs` to generate JS, PHP and Sass documentation (assuming you're documenting your code of course) in the `docs/` folder or `grunt lint` to lint your JS, PHP and Sass with reports available in the `reports/` folder.
 
 ## Changelog
 
