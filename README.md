@@ -24,7 +24,7 @@ If you don't wish to use either of the above, open `grunt/aliases.json` and remo
 
 **NOTE**: If you encounter permissions issues with any of the above installation commands you may need to run them as sudo e.g. `sudo gem install scss-lint'.
 
-## Useage
+## Usage
 
 Edit the settings in `gruntfile.js` to suit your project and run `grunt` to perform an initial build!
 
