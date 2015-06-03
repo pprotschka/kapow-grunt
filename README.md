@@ -39,7 +39,7 @@ By default, Kapow! Grunt is built around the following folder structure:
         js/
         sass/
       bower_components/
-      docs/
+      documentation/
       grunt/
       htdocs
         /wp-content/
