@@ -1,6 +1,5 @@
 module.exports = {
     options: {
-      // map: true,
       processors: [
         require('autoprefixer-core')({browsers: ['> 5%', 'last 2 versions' ]})
       ]
