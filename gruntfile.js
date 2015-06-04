@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         // Site specific settings
         // -------------------------------------
         siteInfo: {
-          fancy_name: 'Your Project',       // The 'fancy' name for your project e.g. 'My First Website'
+          fancy_name: 'My Project',       // The 'fancy' name for your project e.g. 'My First Website'
           docs_path: 'documentation',       // Documentation path relative to the project root - NO trailing slash
           reports_path: 'reports',          // Reports path relative to the project root - NO trailing slash
           assets_path: 'assets',            // Assets path relative to the project root - NO trailing slash
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         // -------------------------------------
         wpInfo: {
           wp_content: 'htdocs/wp-content',  // Path to wp-content relative to the project root
-          theme_name: 'theme-name',         // WordPress theme directory name
+          theme_name: 'my-project',         // WordPress theme directory name
           img_dir: 'img',                   // Directory containing theme images
           js_dir: 'js',                     // Directory containing theme Javascript
         },
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         // folders/files that require linting
         // -------------------------------------
         wpPlugins: [
-          '<%= wpInfo.wp_content %>/plugins/mkdo-admin/**/*.php',
+          // '<%= wpInfo.wp_content %>/plugins/my-plugin/**/*.php',
         ],
 
         // -------------------------------------
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         // for inclusion in the <head>
         // -------------------------------------
         concatHead: [
-          '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
+          // '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
         ],
 
         // -------------------------------------
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         // for inclusion in the footer
         // -------------------------------------
         concatFoot: [
-          '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
+          // '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
         ],
 
         // -------------------------------------
