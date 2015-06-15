@@ -4,12 +4,12 @@ module.exports = {
   },
   header: {
     src: ['<%= concatHead %>'],
-    dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.js_dir %>/header.js',
+    dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.tmp.js',
     nonull: true
   },
   footer: {
     src: ['<%= concatFoot %>'],
-    dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.js_dir %>/footer.js',
+    dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.tmp.js',
     nonull: true
   }
 };
