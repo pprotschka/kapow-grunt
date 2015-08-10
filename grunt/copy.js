@@ -1,5 +1,5 @@
 module.exports = {
-  // taskname: {
+  // copy: {
   //   expand: true,
   //   cwd: 'path/to/files/',
   //   src: ['filename'],

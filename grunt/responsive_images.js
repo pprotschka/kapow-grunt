@@ -1,9 +1,9 @@
 module.exports = {
   options: {
-      engine: 'gm',
-      sizes: '<%= imgSizes %>',
-    },
-  all: {
+    engine: 'gm',
+    sizes: '<%= imgSizes %>',
+  },
+  jpg: {
     options: {
       newFilesOnly: true
     },

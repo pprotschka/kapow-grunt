@@ -7,7 +7,7 @@ module.exports = {
     config: 'grunt/config/scsslint.yml',
     reporterOutput: '<%= siteInfo.reports_path %>/scsslint.xml',
   },
-  src: [
+  scss: [
     '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss',
   ]
 };

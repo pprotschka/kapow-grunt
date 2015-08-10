@@ -1,4 +1,4 @@
-module.exports =  {
+module.exports = {
   all: [
     '<%= wpPlugins %>',
     '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php'
