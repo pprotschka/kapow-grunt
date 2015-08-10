@@ -6,6 +6,6 @@ module.exports = {
     ],
     dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.img_dir %>/sprite.png',
     destCss: '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/base/_sprites.scss',
-    imgPath: '<%= wpInfo.img_dir %>/sprite.png'
+    imgPath: '<%= wpInfo.img_dir %>/sprite.png?' + (new Date().getTime()),
   }
 };
