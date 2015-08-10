@@ -62,9 +62,9 @@ module.exports = function(grunt) {
       // for inclusion in the HEADER for IE
       // -------------------------------------
       concatHeadIE: [
-        'bower_components/html5shiv/dist/html5shiv.js'
-        'bower_components/selectivizr/selectivizr.js'
-        'bower_components/respondJS/src/respond.js'
+        'bower_components/html5shiv/dist/html5shiv.js',
+        'bower_components/selectivizr/selectivizr.js',
+        'bower_components/respondJS/src/respond.js',
         '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header_ie.js'
       ],
 
