@@ -54,7 +54,7 @@ module.exports = function(grunt) {
       // for inclusion in the HEADER
       // -------------------------------------
       concatHead: [
-        // '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
+        '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
       ],
 
       // -------------------------------------
@@ -62,7 +62,10 @@ module.exports = function(grunt) {
       // for inclusion in the HEADER for IE
       // -------------------------------------
       concatHeadIE: [
-        // '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header_ie.js'
+        'bower_components/html5shiv/dist/html5shiv.js'
+        'bower_components/selectivizr/selectivizr.js'
+        'bower_components/respondJS/src/respond.js'
+        '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header_ie.js'
       ],
 
       // -------------------------------------
@@ -70,7 +73,7 @@ module.exports = function(grunt) {
       // for inclusion in the FOOTER
       // -------------------------------------
       concatFoot: [
-        // '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
+        '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
       ],
 
       // -------------------------------------
