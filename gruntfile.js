@@ -40,6 +40,7 @@ module.exports = function( grunt ) {
         theme_name: 'my-project', // WordPress theme directory name
         img_dir: 'img', // Directory containing theme images
         js_dir: 'js', // Directory containing theme Javascript
+        css_dir: 'css', // Directory containing additional CSS
         fonts_dir: 'fonts', // Directory containing fonts
       },
 
