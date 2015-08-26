@@ -1,5 +1,5 @@
-module.exports = function(grunt) {
-  require('load-grunt-config')(grunt, {
+module.exports = function( grunt ) {
+  require( 'load-grunt-config' )( grunt, {
     init: true,
     jitGrunt: {
       jitGrunt: true,
@@ -73,6 +73,8 @@ module.exports = function(grunt) {
       // for inclusion in the FOOTER
       // -------------------------------------
       concatFoot: [
+        // 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+        // 'bower_components/foundation/js/foundation.js',
         '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
       ],
 
@@ -80,7 +82,7 @@ module.exports = function(grunt) {
       // Define image sizes for use with the
       // responsive images task
       // -------------------------------------
-      imgSizes: [{
+      imgSizes: [ {
         name: 'x-small',
         width: 450
       }, {
@@ -114,18 +116,23 @@ module.exports = function(grunt) {
       }, {
         name: 'x-large-retina',
         width: 3200
-      }]
+      } ]
     }
-  });
+  } );
+  // -----------------------------------------------------------------------------
   // Provides a summary of the time tasks have taken
-  require('time-grunt')(grunt);
+  // -----------------------------------------------------------------------------
+  require( 'time-grunt' )( grunt );
 
+  // -----------------------------------------------------------------------------
   // Silences grunt-newer
   // https://github.com/tschaub/grunt-newer/issues/52#issuecomment-59397284
+  // -----------------------------------------------------------------------------
+
   var origLogHeader = grunt.log.header;
-  grunt.log.header = function(msg) {
-    if (!/newer(-postrun)?:/.test(msg)) {
-      origLogHeader.apply(this, arguments);
+  grunt.log.header = function( msg ) {
+    if ( !/newer(-postrun)?:/.test( msg ) ) {
+      origLogHeader.apply( this, arguments );
     }
   };
 };
