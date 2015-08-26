@@ -1,6 +1,7 @@
 module.exports = {
   options: {
     bundleExec: false, // Change to true once using bundler for gem installs
+    emitError: true,
     colorizeOutput: true,
     compact: true,
     force: true,
