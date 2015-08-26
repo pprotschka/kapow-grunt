@@ -4,12 +4,12 @@ module.exports = {
       // sourcemap: true,
       style: 'compressed'
     },
-    files: [{
+    files: [ {
       expand: true,
       cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>',
-      src: ['*.scss'],
+      src: [ '*.scss' ],
       dest: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
       ext: '.css'
-    }]
+    } ]
   }
 };

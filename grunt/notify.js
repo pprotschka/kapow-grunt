@@ -38,7 +38,13 @@ module.exports = {
   docs: {
     options: {
       title: 'Docs',
-      message: '<%= siteInfo.fancy_name %> docs processed!'
+      message: '<%= siteInfo.fancy_name %> docs generated!'
+    }
+  },
+  linting: {
+    options: {
+      title: 'Linting',
+      message: '<%= siteInfo.fancy_name %> files linted!'
     }
   }
 };

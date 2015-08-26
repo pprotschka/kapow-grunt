@@ -7,11 +7,11 @@ module.exports = {
     options: {
       newFilesOnly: true
     },
-    files: [{
+    files: [ {
       expand: true,
       cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>',
-      src: ['**/*.jpg'],
+      src: [ '**/*.jpg' ],
       custom_dest: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/{%= name %}/'
-    }]
+    } ]
   }
 };

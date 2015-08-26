@@ -1,6 +1,7 @@
-module.exports = function(grunt) {
-  grunt.registerTask('default', [
-    "lint",
+module.exports = function( grunt ) {
+  grunt.registerTask( 'default', [
+    'sync',
+    // "lint",
     "sass",
     "postcss",
     "spritesmith",
@@ -8,11 +9,11 @@ module.exports = function(grunt) {
     "modernizr",
     "concat",
     "uglify",
-    "svg2png",
-    "respimages",
+    // "svg2png",
+    // "respimages",
     "newer:imagemin",
     "clean",
-    "docs",
+    // "docs",
     "notify:build"
-  ]);
+  ] );
 };

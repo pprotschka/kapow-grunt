@@ -6,12 +6,14 @@
   "docs": [
     "jsdoc",
     "phpdoc:all",
-    "sassdoc"
+    "sassdoc",
+    "notify:docs"
   ],
   "lint": [
     "jshint",
     "phplint:all",
-    "scsslint"
+    "scsslint",
+    "notify:linting"
   ],
   "respimages": [
     "responsive_images"

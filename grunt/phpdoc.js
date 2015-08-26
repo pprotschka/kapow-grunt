@@ -7,11 +7,11 @@ module.exports = {
     dest: '<%= siteInfo.docs_path %>/php'
   },
   theme: {
-    src: ['<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>'],
+    src: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>' ],
     dest: '<%= siteInfo.docs_path %>/php'
   },
   plugins: {
-    src: ['<%= wpPlugins %>'],
+    src: [ '<%= wpPlugins %>' ],
     dest: '<%= siteInfo.docs_path %>/php'
   }
 }

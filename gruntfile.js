@@ -28,6 +28,7 @@ module.exports = function( grunt ) {
         js_dir: 'js', // Directory containing Javascript assets
         sass_dir: 'sass', // Directory containing Sass assets
         css_dir: 'css', // Directory containing CSS assets
+        fonts_dir: 'fonts', // Directory containing fonts
         sass_file: 'site' // Name of your main Sass file and consequent CSS file
       },
 
@@ -39,6 +40,7 @@ module.exports = function( grunt ) {
         theme_name: 'my-project', // WordPress theme directory name
         img_dir: 'img', // Directory containing theme images
         js_dir: 'js', // Directory containing theme Javascript
+        fonts_dir: 'fonts', // Directory containing fonts
       },
 
       // -------------------------------------

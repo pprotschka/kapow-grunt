@@ -1,9 +1,9 @@
 module.exports = {
   options: {
     processors: [
-      require('autoprefixer-core')({
-        browsers: ['> 5%', 'last 2 versions']
-      })
+      require( 'autoprefixer-core' )( {
+        browsers: [ '> 5%', 'last 2 versions' ]
+      } )
     ]
   },
   css: {
