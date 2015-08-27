@@ -3,22 +3,22 @@ module.exports = {
     livereload: true,
     spawn: false
   },
-  // phplint and phpdoc don't work with newer
-  code_plugins: {
-    files: [ '<%= wpPlugins %>' ],
-    tasks: [
-      'phplint:plugins',
-      // 'phpdoc:plugins',
-      'notify:code_plugins'
-    ]
-  },
-  code_theme: {
-    files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
-    tasks: [
-      'phplint:theme',
-      // 'phpdoc:theme',
-      'notify:code_theme'
-    ]
+  // // phplint and phpdoc don't work with newer
+  // code_plugins: {
+  //   files: [ '<%= wpPlugins %>' ],
+  //   tasks: [
+  //     'phplint:plugins',
+  //     'phpdoc:plugins',
+  //     'notify:code_plugins'
+  //   ]
+  // },
+  // code_theme: {
+  //   files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
+  //   tasks: [
+  //     'phplint:theme',
+  //     // 'phpdoc:theme',
+  //     'notify:code_theme'
+  //   ]
   },
   // // respimages doesn't require newer
   // images_jpg: {
