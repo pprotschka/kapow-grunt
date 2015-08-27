@@ -1,6 +1,6 @@
 # Kapow! Grunt
 
-The Grunt component of the Kapow! framework/boilerplate for WordPress builds, complete with linting, documentation and responsive image size generation.
+The Grunt component of the Kapow! framework/boilerplate for WordPress site development.
 
 ## About
 
