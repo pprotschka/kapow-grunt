@@ -11,7 +11,7 @@ module.exports = {
       expand: true,
       cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
       src: [
-        '*.css'
+        '*.css',
         '!<%= siteInfo.sass_file %>.css'
       ],
       dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.css_dir %>',

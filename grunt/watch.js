@@ -19,7 +19,8 @@ module.exports = {
   //     // 'phpdoc:theme',
   //     'notify:code_theme'
   //   ]
-  },
+  // },
+
   // // respimages doesn't require newer
   // images_jpg: {
   //     files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.jpg' ],
@@ -38,6 +39,7 @@ module.exports = {
   //     'notify:images'
   //   ]
   // },
+
   scripts: {
     files: [
       '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
