@@ -4,7 +4,7 @@ The Grunt component of the Kapow! framework/boilerplate for WordPress site devel
 
 ## About
 
-The Kapow! Grunt component removes the need for you to waste hours of painful set-up time integrating a build tool into your WordPress site development workflow. All the hard work has been done for you: you just need to install the dependencies with a couple of quick commands before configuring it to meet your requirements and you're good to go!
+The Kapow! Grunt component removes the need for you to waste hours of painful set-up time integrating a build tool into your WordPress site development workflow. All the hard work has been done for you: just install the dependencies with a couple of quick commands and then configure it to meet your requirements and you are good to go!
 
 Kapow! Grunt consists of tasks for:
 
