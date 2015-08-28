@@ -63,8 +63,9 @@ Out of the box Kapow! Grunt is designed to work with the following folder struct
       htdocs
         /wp-content/
           theme-name/
+            css/
             img/
-              s/
+            js/
       node_modules/
       reports/
 
