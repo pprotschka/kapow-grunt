@@ -3,7 +3,7 @@ module.exports = function( grunt ) {
     init: true,
     jitGrunt: {
       jitGrunt: true,
-      // These help Grunt play nicely with certain plugins
+      // These mappings help Grunt play nicely with certain plugins
       staticMappings: {
         responsive_images: 'grunt-responsive-images',
         scsslint: 'grunt-scss-lint',
@@ -13,7 +13,7 @@ module.exports = function( grunt ) {
     // -----------------------------------------------------------------------------
     // Anything you define within the main 'data' object can be accessed
     // both in the Gruntfile and in the individual task configurations e.g.
-    // <%= wpInfo.theme_name %> , <%= siteInfo.assets_path %> etc.
+    // <%= wpInfo.theme_name %>, <%= siteInfo.assets_path %> etc.
     // -----------------------------------------------------------------------------
     data: {
       // -------------------------------------
@@ -24,11 +24,11 @@ module.exports = function( grunt ) {
         docs_path: 'documentation', // Documentation path relative to the project root - NO trailing slash
         reports_path: 'reports', // Reports path relative to the project root - NO trailing slash
         assets_path: 'assets', // Assets path relative to the project root - NO trailing slash
-        img_dir: 'img', // Directory containing image assets
-        js_dir: 'js', // Directory containing Javascript assets
-        sass_dir: 'sass', // Directory containing Sass assets
-        css_dir: 'css', // Directory containing CSS assets
-        fonts_dir: 'fonts', // Directory containing fonts
+        img_dir: 'img', // Image assets directory
+        js_dir: 'js', // Javascript assets directory
+        sass_dir: 'sass', // Sass assets directory
+        css_dir: 'css', // CSS assets directory
+        fonts_dir: 'fonts', // Font assets directory
         sass_file: 'site' // Name of your main Sass file and consequent CSS file
       },
 
@@ -38,10 +38,10 @@ module.exports = function( grunt ) {
       wpInfo: {
         wp_content: 'htdocs/wp-content', // Path to wp-content relative to the project root
         theme_name: 'my-project', // WordPress theme directory name
-        img_dir: 'img', // Directory containing theme images
-        js_dir: 'js', // Directory containing theme Javascript
-        css_dir: 'css', // Directory containing additional CSS
-        fonts_dir: 'fonts', // Directory containing fonts
+        img_dir: 'img', // Theme images directory
+        js_dir: 'js', // Theme Javascript directory
+        css_dir: 'css', // Theme CSS directory
+        fonts_dir: 'fonts', // Theme fonts directory
       },
 
       // -------------------------------------
@@ -131,7 +131,6 @@ module.exports = function( grunt ) {
   // Silences grunt-newer
   // https://github.com/tschaub/grunt-newer/issues/52#issuecomment-59397284
   // -----------------------------------------------------------------------------
-
   var origLogHeader = grunt.log.header;
   grunt.log.header = function( msg ) {
     if ( !/newer(-postrun)?:/.test( msg ) ) {

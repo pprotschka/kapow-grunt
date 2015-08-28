@@ -1,3 +1,5 @@
+// Default Task - The master task used to build/re-build the project
+// ----------------------------------------------------------------------------
 module.exports = function( grunt ) {
   grunt.registerTask( 'default', [
     'sync',

@@ -1,4 +1,7 @@
+// Imagemin Task - https://github.com/gruntjs/grunt-contrib-imagemin
+// ----------------------------------------------------------------------------
 module.exports = {
+  // Place minified versions of the image assets in the theme
   images: {
     files: [ {
       expand: true,

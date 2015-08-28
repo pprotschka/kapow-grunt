@@ -1,3 +1,5 @@
+// Copy Task - https://github.com/gruntjs/grunt-contrib-copy
+// ----------------------------------------------------------------------------
 module.exports = {
   // copy: {
   //   expand: true,

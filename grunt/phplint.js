@@ -1,3 +1,5 @@
+// PHPlint Task - https://github.com/jgable/grunt-phplint
+// ----------------------------------------------------------------------------
 module.exports = {
   all: [
     '<%= wpPlugins %>',

@@ -1,4 +1,7 @@
+// PostCSS Task - https://github.com/nDmitry/grunt-postcss
+// ----------------------------------------------------------------------------
 module.exports = {
+  // Run our CSS through autoprefixer
   options: {
     processors: [
       require( 'autoprefixer-core' )( {

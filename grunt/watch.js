@@ -1,9 +1,13 @@
+// Watch Task - https://github.com/gruntjs/grunt-contrib-watch
+// ----------------------------------------------------------------------------
 module.exports = {
   options: {
+    // Livereload support - requires a browser plugin
     livereload: true,
     spawn: false
   },
-  // // phplint and phpdoc don't work with newer
+
+  // // Process plugin code
   // code_plugins: {
   //   files: [ '<%= wpPlugins %>' ],
   //   tasks: [
@@ -12,6 +16,7 @@ module.exports = {
   //     'notify:code_plugins'
   //   ]
   // },
+  // // Process theme code
   // code_theme: {
   //   files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
   //   tasks: [
@@ -20,8 +25,7 @@ module.exports = {
   //     'notify:code_theme'
   //   ]
   // },
-
-  // // respimages doesn't require newer
+  // // Process JPG images
   // images_jpg: {
   //     files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.jpg' ],
   //     tasks: [
@@ -30,7 +34,7 @@ module.exports = {
   //       'notify:images'
   //     ]
   //   },
-  // // svg2png doesn 't work with newer
+  // // Process PNG/SVF/GIF images
   // images_other: {
   //   files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{png,svg,gif}' ],
   //   tasks: [
@@ -40,6 +44,7 @@ module.exports = {
   //   ]
   // },
 
+  // Process scripts
   scripts: {
     files: [
       '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
@@ -55,6 +60,7 @@ module.exports = {
       'notify:scripts'
     ]
   },
+  // Process styles
   styles: {
     files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss' ],
     tasks: [

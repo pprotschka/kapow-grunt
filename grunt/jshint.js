@@ -1,11 +1,17 @@
+// JSHint Task - https://github.com/gruntjs/grunt-contrib-jshint
+// ----------------------------------------------------------------------------
 module.exports = {
   options: {
+    // JSHint config options
     jshintrc: 'grunt/config/jshintrc.json',
+    // Output the results to file
+    reporterOutput: '<%= siteInfo.reports_path %>/jshint.txt',
     reporter: require( 'jshint-stylish' ),
-    reporterOutput: '<%= siteInfo.reports_path %>/jshint.txt'
   },
+  // Lint our Javascript
   scripts: {
     options: {
+      // Continue the build regardless of JSHint errors
       force: true
     },
     src: [
