@@ -6,21 +6,28 @@ The Grunt component of the Kapow! framework/boilerplate for WordPress site devel
 
 A more detailed overview of what Kapow! Grunt contains is coming Real Soon Now™...
 
+## Requirements
+
+Kapow! Sass is designed to work along side the other Kapow! modules: Skeleton, Grunt, Theme.
+Ensure that you have [NodeJS](https://nodejs.org/download/), [Grunt](http://gruntjs.com/installing-grunt) [Bower](http://bower.io/#install-bower) installed as the bare minimum. You will need [PHP](http://php.net/manual/en/install.php) installed for theme/plugin linting, and [phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) if you wish to generate PHP documentation. If you'd like to lint your Sass with SCSS Lint you'll need to ensure that you have  [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed.
+
 ## Installation
 
 If you're not using this as part of the wider Kapow! set-up, you'll need to...
 
-1) Ensure that you have the [NodeJS & NPM](https://nodejs.org/download/), [Bower](http://bower.io/#install-bower), [PHP](http://php.net/manual/en/install.php) and [Ruby](https://www.ruby-lang.org/en/documentation/installation/) on your machine to start with.
+1) Run `npm install` and `bower install modernizr` to get the Node dependencies and Modernizr respectively.
 
-2) Run `npm install` and `bower install modernizr` to get the Node dependencies and Modernizr respectively.
-
-3). If you intend to use responsive images you will need GraphicsMagick: you can install it by running `brew install GraphicsMagick` if you're on a Mac or alternatively visit the [GraphicsMagick downloads page](http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/).
+2). If you intend to use responsive images you will need GraphicsMagick: you can install it by running `brew install GraphicsMagick` if you're on a Mac or alternatively visit the [GraphicsMagick downloads page](http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/).
 
 You can skip this step if you don't intend to use it: just make sure that you comment out or remove the calls to `respimages` in `grunt/default.js` and `grunt/watch.js`.
 
-4) If you intend to use SassDoc and PHPDoc you will need to install SCSS Lint with `gem install scss-lint` and also [install phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html).
+3) If you intend to use SassDoc and PHPDoc you will need to install SCSS Lint with `gem install scss-lint` and also .
 
 If you don't wish to use either of the above, open `grunt/aliases.json` and remove them from the `lint` array.
+
+4)
+
+5) Make a nice hot cup of tea/coffee and bask in your magnificence!
 
 **NOTE**: If you encounter permissions issues with any of the above installation commands you may need to run them as sudo e.g. `sudo gem install scss-lint'.
 
