@@ -10,29 +10,25 @@ A more detailed overview of what Kapow! Grunt contains is coming Real Soon Nowâ„
 
 Kapow! Grunt is designed to work along side the other Kapow! modules: [Skeleton](https://github.com/mkdo/kapow-skeleton), [Sass](https://github.com/mkdo/kapow-sass), [Theme](https://github.com/mkdo/kapow-theme).
 
-Ensure that you have [NodeJS](https://nodejs.org/download/), [Grunt](http://gruntjs.com/installing-grunt) and [Bower](http://bower.io/#install-bower) installed as the bare minimum. 
+Ensure that you have [NodeJS](https://nodejs.org/download/), [Grunt](http://gruntjs.com/installing-grunt) and [Bower](http://bower.io/#install-bower) installed as these are the minimum requirements.
 
 Optionally you will need [PHP](http://php.net/manual/en/install.php) installed for theme/plugin linting, and [phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) to generate PHP documentation. If you'd like to lint your Sass with SCSS Lint you'll need to have  [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed.
 
+If you intend to use responsive images you will need GraphicsMagick: you can install it by running `brew install GraphicsMagick` if you're on a Mac, or alternatively visit the [GraphicsMagick downloads page](http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/).
+
 ## Installation
 
-If you're not using this as part of the wider Kapow! set-up, you'll need to...
+**1)** Run `npm install` and `bower install` to get the Node and Bower packages respectively. 
 
-1) Run `npm install` and `bower install modernizr` to get the Node dependencies and Modernizr respectively.
+**2)** If you're planning on linting your Sass you will need to install SCSS Lint by running `gem install scss-lint`.
 
-2). If you intend to use responsive images you will need GraphicsMagick: you can install it by running `brew install GraphicsMagick` if you're on a Mac or alternatively visit the [GraphicsMagick downloads page](http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/).
+**3)** Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. The `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
-You can skip this step if you don't intend to use it: just make sure that you comment out or remove the calls to `respimages` in `grunt/default.js` and `grunt/watch.js`.
+**4)** Run `grunt` to perform an initial build!
 
-3) If you intend to use SassDoc and PHPDoc you will need to install SCSS Lint with `gem install scss-lint` and also .
+**5)** Make a nice hot cup of tea/coffee and bask in your magnificence!
 
-If you don't wish to use either of the above, open `grunt/aliases.json` and remove them from the `lint` array.
-
-4)
-
-5) Make a nice hot cup of tea/coffee and bask in your magnificence!
-
-**NOTE**: If you encounter permissions issues with any of the above installation commands you may need to run them as sudo e.g. `sudo gem install scss-lint'.
+**NB**: If you run into trouble with permissions, you may need to prefix the above with sudo e.g. `sudo npm install`.
 
 ## Usage
 
