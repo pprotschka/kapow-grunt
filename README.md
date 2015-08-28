@@ -12,7 +12,7 @@ Kapow! Grunt is designed to work along side the other Kapow! modules: [Skeleton]
 
 Ensure that you have [NodeJS](https://nodejs.org/download/), [Grunt](http://gruntjs.com/installing-grunt) and [Bower](http://bower.io/#install-bower) installed as the bare minimum. 
 
-Optionally you will need [PHP](http://php.net/manual/en/install.php) installed for theme/plugin linting, and [phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) if you wish to generate PHP documentation. If you'd like to lint your Sass with SCSS Lint you'll need to ensure that you have  [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed.
+Optionally you will need [PHP](http://php.net/manual/en/install.php) installed for theme/plugin linting, and [phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) to generate PHP documentation. If you'd like to lint your Sass with SCSS Lint you'll need to have  [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed.
 
 ## Installation
 
