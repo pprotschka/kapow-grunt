@@ -5,7 +5,7 @@ module.exports = {
   options: {
     processors: [
       require('pixrem')(),
-      require( 'autoprefixer-core' )( {
+      require( 'autoprefixer' )( {
         browsers: [ '> 5%', 'last 2 versions' ]
       } )
     ]
