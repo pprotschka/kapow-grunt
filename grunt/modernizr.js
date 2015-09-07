@@ -5,8 +5,8 @@ module.exports = {
   custom: {
     "uglify": false,
     "extra": {
-      "shiv": true,
-      "printshiv": true,
+      "shiv": false,
+      "printshiv": false,
       "load": true,
       "mq": true,
       "cssclasses": true
