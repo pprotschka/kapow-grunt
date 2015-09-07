@@ -4,10 +4,10 @@ module.exports = {
   // Run our CSS through pixrem and autoprefixer
   options: {
     processors: [
-      require('pixrem')(),
       require( 'autoprefixer' )( {
         browsers: [ '> 5%', 'last 2 versions' ]
-      } )
+      } ),
+      require('pixrem')()
     ]
   },
   css: {
