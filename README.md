@@ -37,8 +37,11 @@ Ensure the contents of the `kapow-grunt` folder in this repo are placed in the r
 
     your-project/  << put contents here
       grunt/
-      bower_components/
-
+      bower.json
+      gruntfile.js
+      package.json
+      etc...
+      
 **1)** Run `npm install` and `bower install` to get the Node and Bower packages respectively. 
 
 If you're planning on linting your Sass you will need to install SCSS Lint by running `gem install scss-lint`.
