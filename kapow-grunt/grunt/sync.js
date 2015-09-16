@@ -12,7 +12,7 @@ module.exports = {
   // Copy Font Awesome fonts into the theme
   fonts_fontawesome: {
     files: [ {
-      cwd: 'bower_components/fontawesome/',
+      cwd: 'bower_components/fontawesome/fonts',
       src: [ '*', ],
       dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.fonts_dir %>/'
     } ],
