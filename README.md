@@ -33,6 +33,12 @@ If you intend to use responsive images you will need GraphicsMagick: you can ins
 
 ## Installation
 
+Ensure the contents of the `kapow-grunt` folder in this repo are placed in the root of the project e.g.
+
+    your-project/  << put contents here
+      grunt/
+      bower_components/
+
 **1)** Run `npm install` and `bower install` to get the Node and Bower packages respectively. 
 
 If you're planning on linting your Sass you will need to install SCSS Lint by running `gem install scss-lint`.
