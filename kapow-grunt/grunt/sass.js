@@ -4,7 +4,8 @@ module.exports = {
   // Generate CSS from our Sass files
   sass: {
     options: {
-      // sourcemap: true,
+      sourceMap: true,
+      sourceMapContents: true,
       style: 'compressed'
     },
     files: [ {
