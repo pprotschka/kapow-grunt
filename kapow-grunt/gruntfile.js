@@ -36,7 +36,7 @@ module.exports = function( grunt ) {
       // WordPress specific settings
       // -------------------------------------
       wpInfo: {
-        wp_content: 'htdocs/wp-content', // Path to wp-content relative to the project root
+        wp_content: 'build/wp-content', // Path to wp-content relative to the project root
         theme_name: 'my-project', // WordPress theme directory name
         img_dir: 'img', // Theme images directory
         js_dir: 'js', // Theme Javascript directory
