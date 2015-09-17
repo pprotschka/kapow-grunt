@@ -29,7 +29,7 @@ module.exports = function( grunt ) {
         sass_dir: 'sass', // Sass assets directory
         css_dir: 'css', // CSS assets directory
         fonts_dir: 'fonts', // Font assets directory
-        sass_file: 'site' // Name of your main Sass file and consequent CSS file
+        sass_file: 'style' // Name of your main Sass file and consequent CSS file
       },
 
       // -------------------------------------
