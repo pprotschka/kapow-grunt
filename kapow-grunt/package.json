@@ -23,6 +23,7 @@
     "grunt-modernizr": "metaloha/grunt-modernizr#64aed149b36c23e9ecd987a47cd2ea212115baa4",
     "grunt-newer": "^1.1.0",
     "grunt-notify": "~0.4.1",
+    "grunt-parker": "^0.1.3",
     "grunt-phpdoc": "^0.1.1",
     "grunt-phplint": "0.0.5",
     "grunt-postcss": "^0.6.0",
