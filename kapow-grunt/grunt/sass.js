@@ -6,6 +6,7 @@ module.exports = {
     options: {
       sourceMap: true,
       sourceMapContents: true,
+      sourceMapRoot: 'assets/css',
       style: 'compressed'
     },
     files: [ {
