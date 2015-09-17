@@ -4,7 +4,8 @@ module.exports = {
   // Front End Styles
   frontend: {
     options: {
-      sourceMap: true,
+      //sourceMap: true,
+      //sourceMapInlineSources: true,
       compatibility: 'ie8'
     },
     src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.sass_file %>.css',
