@@ -8,6 +8,8 @@ module.exports = function( grunt ) {
     "postcss",
     "spritesmith",
     "cssmin",
+    "copy:main_sourcemap",
+    "copy:other_sourcemaps",
     "modernizr",
     "concat",
     "uglify",
