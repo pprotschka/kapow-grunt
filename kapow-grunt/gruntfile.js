@@ -78,6 +78,7 @@ module.exports = function( grunt ) {
       concatFoot: [
         // 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
         // 'bower_components/foundation/js/foundation.js',
+        '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_navigation.js',
         '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
       ],
 
