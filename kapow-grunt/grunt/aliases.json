@@ -1,4 +1,7 @@
 {
+  "analyse": [
+    "parker"
+  ],
   "build": [
     "default",
     "watch"
