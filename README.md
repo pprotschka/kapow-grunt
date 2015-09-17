@@ -97,7 +97,7 @@ Several Grunt commands are at your disposal:
 
 ## Changelog
 
-**1.2.0** - *28.08.2015* - Added grunt-parker support and `analyse` alias.
+**1.2.0** - *17.09.2015* - Added grunt-parker support and `analyse` alias.
 
 **1.1.0** - *28.08.2015* - Updated inline documentation.
 
