@@ -67,7 +67,7 @@ Out of the box Kapow! Grunt is designed to work with the following folder struct
         js/
         sass/
       bower_components/
-      documentation/
+      docs/
       grunt/
       build
         /wp-content/
