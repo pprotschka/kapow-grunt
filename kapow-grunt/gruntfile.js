@@ -57,6 +57,7 @@ module.exports = function( grunt ) {
       // for inclusion in the HEADER
       // -------------------------------------
       concatHead: [
+        '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js',
         '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
       ],
 
@@ -76,6 +77,7 @@ module.exports = function( grunt ) {
       // for inclusion in the FOOTER
       // -------------------------------------
       concatFoot: [
+        'bower_components/underscore/underscore.js',
         // 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
         // 'bower_components/foundation/js/foundation.js',
         '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_navigation.js',
@@ -84,7 +86,8 @@ module.exports = function( grunt ) {
 
       // -------------------------------------
       // Define image sizes for use with the
-      // responsive images task
+      // responsive images task. Feel free to
+      // change these example sizes.
       // -------------------------------------
       imgSizes: [ {
         name: 'x-small',
