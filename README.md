@@ -90,9 +90,10 @@ Several Grunt commands are at your disposal:
 
 - `grunt` builds the project
 - `grunt build` builds and then watches for changes
-- `grunt docs` generates Sass, Javascript and PHP documentation
+- `grunt document` generates Sass, Javascript and PHP documentation
 - `grunt lint` lint your Sass, Javascript and PHP for errors
-
+- `grunt analyse` get useful feedback on your code (currently CSS only)
+- 
 **NB:** The `docs` and `lint` commands assume you have the required dependencies installed as detailed earlier.
 
 ## Changelog
