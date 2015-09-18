@@ -1,6 +1,9 @@
 // PHPdoc Task - https://github.com/chrisklaussner/grunt-phpdoc
 // ----------------------------------------------------------------------------
 module.exports = {
+  options: {
+    force: true
+  },
   // Generate theme and plugin documentation
   all: {
     src: [
@@ -16,7 +19,10 @@ module.exports = {
   },
   // Generate plugin documentation
   plugins: {
-    src: [ '<%= wpPlugins %>' ],
+    src: [
+      '<%= wpInfo.wp_content %>/plugins/index.php', // hack to ensure phpdoc doesn't fail if no plugins are specified
+      '<%= wpPlugins %>'
+    ],
     dest: '<%= siteInfo.docs_path %>/php'
   }
 }
