@@ -6,7 +6,7 @@
     "default",
     "watch"
   ],
-  "docs": [
+  "document": [
     "jsdoc",
     "phpdoc:all",
     "sassdoc",
