@@ -21,7 +21,7 @@ module.exports = function( grunt ) {
       // -------------------------------------
       siteInfo: {
         fancy_name: 'My Project', // The 'fancy' name for your project e.g. 'My First Website'
-        docs_path: 'documentation', // Documentation path relative to the project root - NO trailing slash
+        docs_path: 'docs', // Documentation path relative to the project root - NO trailing slash
         reports_path: 'reports', // Reports path relative to the project root - NO trailing slash
         assets_path: 'assets', // Assets path relative to the project root - NO trailing slash
         img_dir: 'img', // Image assets directory
