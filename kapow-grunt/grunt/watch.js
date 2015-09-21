@@ -29,7 +29,6 @@ module.exports = {
    images_jpg: {
        files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.jpg' ],
        tasks: [
-         'respimages',
          'newer:imagemin',
          'notify:images'
        ]
