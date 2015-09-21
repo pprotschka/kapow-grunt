@@ -25,15 +25,15 @@ module.exports = {
   //     'notify:code_theme'
   //   ]
   // },
-  // // Process JPG images
-  // images_jpg: {
-  //     files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.jpg' ],
-  //     tasks: [
-  //       'respimages',
-  //       'newer:imagemin',
-  //       'notify:images'
-  //     ]
-  //   },
+   // Process JPG images
+   images_jpg: {
+       files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.jpg' ],
+       tasks: [
+         'respimages',
+         'newer:imagemin',
+         'notify:images'
+       ]
+     },
   // // Process PNG/SVF/GIF images
   // images_other: {
   //   files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{png,svg,gif}' ],
