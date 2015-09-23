@@ -3,6 +3,9 @@
 module.exports = {
   // Place minified versions of the image assets in the theme
   images: {
+    options: {
+      progressive: true
+    },
     files: [ {
       expand: true,
       cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>',
