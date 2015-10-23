@@ -20,5 +20,8 @@
 	],
 	"spritesmith": [
 		"sprite"
+	],
+	"maxfilesize": [
+		"maxFilesize"
 	]
 }

@@ -6,7 +6,8 @@ module.exports = function( grunt ) {
 			// These mappings help Grunt play nicely with certain plugins
 			staticMappings: {
 				scsslint: 'grunt-scss-lint',
-				sprite: "grunt-spritesmith"
+				sprite: 'grunt-spritesmith',
+				maxfilesize: 'grunt-max-filesize'
 			}
 		},
 		// -----------------------------------------------------------------------------
