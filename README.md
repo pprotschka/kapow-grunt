@@ -12,7 +12,6 @@ Kapow! Grunt consists of tasks for:
 - Minifying and auto-prefixing CSS
 - Generating a cache busting sprite from your PNG files
 - Minifying images to reduce their file size
-- Creating responsive image sizes
 - Converting your PNGs to SVG alternatives
 - Concatenating, uglifying, linting and documenting Javascript
 - Linting and documenting PHP files in your theme and plugins
@@ -28,8 +27,6 @@ Kapow! Grunt is designed to work along side the other Kapow! modules: [Skeleton]
 Ensure that you have [NodeJS](https://nodejs.org/download/), [Grunt](http://gruntjs.com/installing-grunt) and [Bower](http://bower.io/#install-bower) installed as these are the minimum requirements.
 
 Optionally you will need [PHP](http://php.net/manual/en/install.php) installed for theme/plugin linting, and [phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) to generate PHP documentation. If you'd like to lint your Sass with SCSS Lint you'll need to have  [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed.
-
-If you intend to use responsive images you will need GraphicsMagick: you can install it by running `brew install GraphicsMagick` if you're on a Mac, or alternatively visit the [GraphicsMagick downloads page](http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/).
 
 ## Installation
 
@@ -97,6 +94,8 @@ Several Grunt commands are at your disposal:
 **NB:** The `docs` and `lint` commands assume you have the required dependencies installed as detailed earlier.
 
 ## Changelog
+
+**1.3.0** - *23.10.2015* - Removed responsive images task.
 
 **1.2.0** - *17.09.2015* - Added grunt-parker support and `analyse` alias.
 
