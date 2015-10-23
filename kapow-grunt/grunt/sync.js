@@ -6,7 +6,7 @@ module.exports = {
 		files: [ {
 			cwd: 'bower_components',
 			src: [ '<%= bowerAssets %>' ],
-			dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/'
+			dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/lib'
 		} ],
 	},
 }
