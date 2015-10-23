@@ -18,7 +18,7 @@ module.exports = {
 				'*.css',
 				'!<%= siteInfo.sass_file %>.css'
 			],
-			dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.css_dir %>',
+			dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.css_dir %>',
 			ext: '.css'
 		} ]
 	}

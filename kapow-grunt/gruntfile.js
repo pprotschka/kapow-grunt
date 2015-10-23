@@ -38,6 +38,7 @@ module.exports = function( grunt ) {
 			wpInfo: {
 				wp_content: 'build/wp-content', // Path to wp-content relative to the project root
 				theme_name: 'my-project', // WordPress theme directory name
+				assets_dir: 'assets', // Theme assets directory
 				img_dir: 'img', // Theme images directory
 				js_dir: 'js', // Theme Javascript directory
 				css_dir: 'css', // Theme CSS directory
@@ -83,6 +84,15 @@ module.exports = function( grunt ) {
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_navigation.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
 			],
+
+			// -------------------------------------
+			// Array of paths to Bower folders that
+			// need to be synced to the theme.
+			// NB: No need for 'bower_components/'!
+			// -------------------------------------
+			bowerSync: [
+				// 'fontawesome/fonts',
+			]
 		}
 	} );
 	// -----------------------------------------------------------------------------
