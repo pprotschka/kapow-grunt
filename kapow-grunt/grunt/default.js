@@ -8,6 +8,7 @@ module.exports = function( grunt ) {
 		"postcss",
 		"spritesmith",
 		"cssmin",
+		"maxfilesize:css",
 		"copy:main_sourcemap",
 		"copy:other_sourcemaps",
 		"modernizr",
