@@ -1,27 +1,24 @@
 {
-  "analyse": [
-    "parker"
-  ],
-  "build": [
-    "default",
-    "watch"
-  ],
-  "document": [
-    "jsdoc",
-    "phpdoc:all",
-    "sassdoc",
-    "notify:docs"
-  ],
-  "lint": [
-    "jshint",
-    "phplint:all",
-    "scsslint",
-    "notify:linting"
-  ],
-  "respimages": [
-    "responsive_images"
-  ],
-  "spritesmith": [
-    "sprite"
-  ]
+	"analyse": [
+		"parker"
+	],
+	"build": [
+		"default",
+		"watch"
+	],
+	"document": [
+		"jsdoc",
+		"phpdoc:all",
+		"sassdoc",
+		"notify:docs"
+	],
+	"lint": [
+		"jshint",
+		"phplint:all",
+		"scsslint",
+		"notify:linting"
+	],
+	"spritesmith": [
+		"sprite"
+	]
 }

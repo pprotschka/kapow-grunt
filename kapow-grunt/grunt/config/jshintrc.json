@@ -1,8 +1,8 @@
 {
-  "globals": {
-    "jQuery": true,
-    "console": true,
-    "module": true,
-    "window": true
-  }
+	"globals": {
+		"jQuery": true,
+		"console": true,
+		"module": true,
+		"window": true
+	}
 }
