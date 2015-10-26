@@ -10,6 +10,6 @@ module.exports = {
 		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.img_dir %>/sprite.png',
 		destCss: '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/base/_sprites.scss',
 		// Add a cache busting timestamp to the file name
-		imgPath: '<%= wpInfo.assets_dir %>/<%= wpInfo.img_dir %>/sprite.png?' + ( new Date().getTime() ),
+		imgPath: '<%= wpInfo.assets_path %>/<%= wpInfo.img_dir %>/sprite.png?' + ( new Date().getTime() ),
 	}
 };
