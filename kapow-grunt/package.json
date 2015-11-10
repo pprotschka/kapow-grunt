@@ -26,6 +26,7 @@
         "grunt-sass": "^1.1.0-beta",
         "grunt-sassdoc": "^2.0.1",
         "grunt-scss-lint": "^0.3.8",
+        "grunt-selector4096": "^0.1.2",
         "grunt-spritesmith": "^5.1.0",
         "grunt-svg2png": "^0.2.7",
         "grunt-sync": "^0.4.1",
