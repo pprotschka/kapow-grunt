@@ -16,6 +16,8 @@ Kapow! Grunt consists of tasks for:
 - Concatenating, uglifying, linting and documenting Javascript
 - Linting and documenting PHP files in your theme and plugins
 - Generating a custom Modernizr file based on your CSS & JS
+- Alerting you if CSS file/selector sizes could break legacy IE
+- Synchronising assets to your project from bower_components
 - Cleaning and copying files
 - Watching your files and invoking tasks when they change
 - Notifying you when tasks have completed
@@ -29,6 +31,8 @@ Ensure that you have [NodeJS](https://nodejs.org/download/), [Grunt](http://grun
 Optionally you will need [PHP](http://php.net/manual/en/install.php) installed for theme/plugin linting, and [phpDocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) to generate PHP documentation. If you'd like to lint your Sass with SCSS Lint you'll need to have  [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed.
 
 ## Installation
+
+NB: If you are planning on using the full Kapow! boilerplate for your next project, we have a [setup script](https://github.com/mkdo/kapow-setup) to help you get up and running ***fast***.
 
 Ensure the contents of the `kapow-grunt` folder in this repo are placed in the root of the project e.g.
 
@@ -69,9 +73,10 @@ Out of the box Kapow! Grunt is designed to work with the following folder struct
       build
         /wp-content/
           theme-name/
-            css/
-            img/
-            js/
+            assets/
+                css/
+                img/
+                js/
       node_modules/
       reports/
 
