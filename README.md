@@ -32,7 +32,7 @@ Optionally you will need [PHP](http://php.net/manual/en/install.php) installed f
 
 ## Installation
 
-NB: If you are planning on using the full Kapow! boilerplate for your next project, we have a [setup script](https://github.com/mkdo/kapow-setup) to help you get up and running ***fast***.
+**If you are planning on using the full Kapow! boilerplate for your next project, we have a [setup script](https://github.com/mkdo/kapow-setup) to help you get up and running *fast*.**
 
 Ensure the contents of the `kapow-grunt` folder in this repo are placed in the root of the project e.g.
 
