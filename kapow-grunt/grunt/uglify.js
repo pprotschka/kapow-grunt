@@ -26,5 +26,11 @@ module.exports = {
 		files: {
 			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/footer.min.js': [ '<%= concat.footer.dest %>' ]
 		}
-	}
+	},
+	// Customizer JS
+	customizer: {
+		files: {
+			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/customizer.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/customizer.js' ]
+		}
+	},
 };
