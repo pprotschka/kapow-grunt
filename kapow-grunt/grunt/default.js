@@ -4,9 +4,9 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'default', [
 		// 'sync',
 		// "lint",
+		"spritesmith",
 		"sass",
 		"postcss",
-		"spritesmith",
 		"cssmin",
 		"maxfilesize:css",
 		"selector4096",

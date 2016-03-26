@@ -33,4 +33,10 @@ module.exports = {
 			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/customizer.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/customizer.js' ]
 		}
 	},
+	// Admin JS
+	admin: {
+		files: {
+			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/admin.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/admin.js' ]
+		}
+	},
 };
