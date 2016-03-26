@@ -11,7 +11,7 @@ module.exports = {
 			"mq": true,
 			"cssclasses": true
 		},
-		"devFile": "bower_components/modernizr/src/Modernizr.js",
+		"devFile": "bower_components/modernizr/modernizr.js",
 		"outputFile": "<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js",
 		"files": {
 			"src": [
