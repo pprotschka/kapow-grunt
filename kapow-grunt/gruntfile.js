@@ -103,12 +103,26 @@ module.exports = function( grunt ) {
 			],
 
 			// -------------------------------------
-			// Array of paths to Bower folders that
-			// need to be synced to the theme.
-			// NB: No need for 'bower_components/'!
+			// Array of objects that have Bower `src`
+			// and theme `dest` paths to facilitate
+			// syncing of files and/or folders.
+			//
+			// There is no need for `bower_components`
+			// in the `src` if you specify `cwd` in
+			// the object. This is useful if you wish
+			// to define multiple `src` paths.
+			//
+			// If you need to sync a directory in
+			// its entirety, append `/**` to the
+			// path to the source directory.
+			//
+			// Finally, remember the `dest` path is
+			// relative to the project root, not the
+			// `cwd` if specified.
 			// -------------------------------------
-			bowerSync: [
-				// 'package-name/path/to/file',
+			bowerAssets: [
+				// Example to use a basis for any new Bower folder/file syncing.
+				// { cwd: 'bower_components', src: ['path/**'], dest: 'dest/'}
 			]
 		}
 	} );
