@@ -18,7 +18,7 @@ module.exports = function( grunt ) {
 		// "svg2png",
 		"newer:imagemin",
 		"clean",
-		// "docs",
+		// "document",
 		"notify:build"
 	] );
 };
