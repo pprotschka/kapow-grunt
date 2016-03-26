@@ -3,7 +3,7 @@ module.exports = function( grunt ) {
 		init: true,
 		jitGrunt: {
 			jitGrunt: true,
-			// These staticMappings help Grunt play nicely with certain plugins
+			// These static mappings help Grunt play nicely with certain plugins
 			staticMappings: {
 				scsslint: 'grunt-scss-lint',
 				sprite: 'grunt-spritesmith',
