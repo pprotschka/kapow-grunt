@@ -3,16 +3,14 @@
 module.exports = {
 	// Generate a custom Modernizr build based on checks found in our Sass & JS
 	custom: {
+		"cache": true,
 		"uglify": false,
-		"extra": {
-			"shiv": false,
-			"printshiv": false,
-			"load": true,
-			"mq": true,
-			"cssclasses": true
-		},
+		"options": [
+			"setClasses"
+		],
 		"devFile": "bower_components/modernizr/modernizr.js",
-		"outputFile": "<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js",
+		"dest": "<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js",
+		"crawl": true,
 		"files": {
 			"src": [
 				'<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss',
