@@ -27,14 +27,23 @@ module.exports = {
 	  ]
 	},
 
-	// Process JPG images
+	// Minify JPG & PNG images
 	images_jpg: {
-		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.jpg' ],
+		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{jpg,png}' ],
 		tasks: [
 			'newer:imagemin',
 			'notify:images'
 		]
 	},
+
+        // Minify SVG images
+        images_svg: {
+                files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.svg' ],
+                tasks: [
+                        'newer:svgmin',
+                        'notify:images'
+                ]
+        },
 
 	// // Process PNG/SVF/GIF images
 	// images_other: {

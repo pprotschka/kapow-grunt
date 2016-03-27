@@ -56,5 +56,12 @@ module.exports = {
 			title: 'Linting',
 			message: '<%= siteInfo.fancy_name %> files linted!'
 		}
+	},
+	// Notify once all images have been minified
+	images: {
+		options: {
+			title: 'Images',
+			message: '<%= siteInfo.fancy_name %> images minified!'
+		}
 	}
 };

@@ -12,6 +12,11 @@
 		"sassdoc",
 		"notify:docs"
 	],
+	"images": [
+		"imagemin",
+		"svgmin",
+		"notify:images"
+	],
 	"lint": [
 		"jshint",
 		"phplint:all",

@@ -16,6 +16,7 @@ module.exports = function( grunt ) {
 		"concat",
 		"uglify",
 		// "svg2png",
+		"newer:svgmin",
 		"newer:imagemin",
 		"clean",
 		// "document",
