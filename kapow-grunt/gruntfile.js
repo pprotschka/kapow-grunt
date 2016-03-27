@@ -76,6 +76,7 @@ module.exports = function( grunt ) {
 			// -------------------------------------
 			concatHead: [
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js',
+				'bower_components/picturefill/dist/picturefill.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
 			],
 
@@ -84,6 +85,7 @@ module.exports = function( grunt ) {
 			// for inclusion in the HEADER for IE
 			// -------------------------------------
 			concatHeadIE: [
+				'bower_components/es5-shim/es5-shim.js',
 				'bower_components/html5shiv/dist/html5shiv.js',
 				'bower_components/selectivizr/selectivizr.js',
 				'bower_components/respondJS/src/respond.js',
