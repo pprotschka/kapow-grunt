@@ -23,10 +23,10 @@
 		"scsslint",
 		"notify:linting"
 	],
-	"spritesmith": [
-		"sprite"
-	],
 	"maxfilesize": [
 		"maxFilesize"
+	],
+	"spritesmith": [
+		"sprite"
 	]
 }
