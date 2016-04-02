@@ -1,4 +1,5 @@
 // Sass Lint Task - https://github.com/ahmednuaman/grunt-scss-lint
+// NOTE: This will be replaced by grunt-sass-lint once they release 1.6
 // ----------------------------------------------------------------------------
 module.exports = {
 	// Lint our SCSS files
