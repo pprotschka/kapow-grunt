@@ -11,9 +11,9 @@ module.exports = {
 	code_plugins: {
 	  files: [ '<%= wpPlugins %>' ],
 	  tasks: [
-	    'phplint:plugins',
-	    'phpdoc:plugins',
-	    'notify:code_plugins'
+		'phplint:plugins',
+		// 'phpdoc:plugins',
+		'notify:code_plugins'
 	  ]
 	},
 
@@ -21,39 +21,29 @@ module.exports = {
 	code_theme: {
 	  files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
 	  tasks: [
-	    'phplint:theme',
-	    // 'phpdoc:theme',
-	    'notify:code_theme'
+		'phplint:theme',
+		// 'phpdoc:theme',
+		'notify:code_theme'
 	  ]
 	},
 
 	// Minify JPG & PNG images
 	images_jpg: {
-		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{jpg,png}' ],
+		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{jpg,png,gif}' ],
 		tasks: [
 			'newer:imagemin',
 			'notify:images'
 		]
 	},
 
-        // Minify SVG images
-        images_svg: {
-                files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.svg' ],
-                tasks: [
-                        'newer:svgmin',
-                        'notify:images'
-                ]
-        },
-
-	// // Process PNG/SVF/GIF images
-	// images_other: {
-	//   files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{png,svg,gif}' ],
-	//   tasks: [
-	//     'svg2png',
-	//     'newer:imagemin',
-	//     'notify:images'
-	//   ]
-	// },
+	// Minify SVG images
+	images_svg: {
+			files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.svg' ],
+			tasks: [
+					'newer:svgmin',
+					'notify:images'
+			]
+	},
 
 	// Process scripts
 	scripts: {
