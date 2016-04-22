@@ -20,7 +20,7 @@
 	"lint": [
 		"jshint",
 		"phplint:all",
-		"scsslint",
+		"sasslint",
 		"notify:linting"
 	],
 	"maxfilesize": [

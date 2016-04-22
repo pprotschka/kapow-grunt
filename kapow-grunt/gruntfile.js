@@ -5,9 +5,9 @@ module.exports = function( grunt ) {
 			jitGrunt: true,
 			// These static mappings help Grunt play nicely with certain plugins
 			staticMappings: {
-				scsslint: 'grunt-scss-lint',
+				sasslint: 'grunt-sass-lint',
 				sprite: 'grunt-spritesmith',
-				maxfilesize: 'grunt-max-filesize'
+				maxfilesize: 'grunt-max-filesize',
 			}
 		},
 		// -----------------------------------------------------------------------------
