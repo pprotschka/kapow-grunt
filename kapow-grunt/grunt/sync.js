@@ -2,7 +2,7 @@
 // ----------------------------------------------------------------------------
 module.exports = {
 	// Sync bower assets into the theme
-	bower_sync: {
-		files: '<%= bowerAssets %>',
+	sync_assets: {
+		files: '<%= syncAssets %>',
 	},
 }

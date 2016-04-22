@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------------------
 module.exports = function( grunt ) {
 	grunt.registerTask( 'default', [
-		// 'sync',
+		'sync',
 		// "lint",
 		"spritesmith",
 		"sass",
