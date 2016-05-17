@@ -182,8 +182,16 @@ module.exports = function(grunt) {
 			// `cwd` if specified.
 			// -------------------------------------
 			syncAssets: [
-				// Example to use as basis for any new Bower folder/file syncing.
-				// { cwd: 'bower_components', src: ['path/**'], dest: 'dest/'}
+				// -------------------------------------
+				// Example to use as basis for any new
+				// Bower folder/file syncing.
+				//
+				// {
+				//     cwd: 'bower_components',
+				//     src: ['path/**'],
+				//     dest: 'dest/'
+				// }
+				// -------------------------------------
 				{
 					src: ['<%= siteInfo.assets_path %>/<%= siteInfo.fonts_dir %>/**'],
 					dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.fonts_dir %>/'
