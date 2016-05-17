@@ -1,7 +1,10 @@
 // Spritesmith Task - https://github.com/Ensighten/grunt-spritesmith
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Generate an image sprite from PNG assets along with useful Sass variables
+	// Generate an image sprite from PNG
+	// assets along with useful Sass
+	// variables.
+	// -------------------------------------
 	all: {
 		src: [
 			'<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/*.png',

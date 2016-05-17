@@ -1,9 +1,12 @@
-module.exports = function( grunt ) {
-	require( 'load-grunt-config' )( grunt, {
+module.exports = function(grunt) {
+	require('load-grunt-config')(grunt, {
 		init: true,
 		jitGrunt: {
 			jitGrunt: true,
-			// These static mappings help Grunt play nicely with certain plugins
+			// -------------------------------------
+			// These static mappings help Grunt play
+			// nicely with certain plugins.
+			// -------------------------------------
 			staticMappings: {
 				sasslint: 'grunt-sass-lint',
 				sprite: 'grunt-spritesmith',
@@ -17,28 +20,62 @@ module.exports = function( grunt ) {
 		// -----------------------------------------------------------------------------
 		data: {
 			// -------------------------------------
-			// Project specific settings
+			// Project specific settings.
 			// -------------------------------------
 			siteInfo: {
-				// The 'fancy' name for your project e.g. 'My First Website'
+				// -------------------------------------
+				// The 'fancy' name for your project
+				// e.g. 'My First Website'.
+				// -------------------------------------
 				fancy_name: 'My Project',
-				// Documentation path relative to the project root - NO trailing slash
+
+				// -------------------------------------
+				// Documentation path relative to the
+				// project root - NO trailing slash.
+				// -------------------------------------
 				docs_path: 'docs',
-				// Reports path relative to the project root - NO trailing slash
+
+				// -------------------------------------
+				// Reports path relative to the project
+				// root - NO trailing slash.
+				// -------------------------------------
 				reports_path: 'reports',
-				// Assets path relative to the project root - NO trailing slash
+
+				// -------------------------------------
+				// Assets path relative to the project
+				// root - NO trailing slash.
+				// -------------------------------------
 				assets_path: 'assets',
-				// Image assets directory
+
+				// -------------------------------------
+				// Image assets directory.
+				// -------------------------------------
 				img_dir: 'img',
-				// Javascript assets directory
+
+				// -------------------------------------
+				// Javascript assets directory.
+				// -------------------------------------
 				js_dir: 'js',
-				// Sass assets directory
+
+				// -------------------------------------
+				// Sass assets directory.
+				// -------------------------------------
 				sass_dir: 'sass',
-				// CSS assets directory
+
+				// -------------------------------------
+				// CSS assets directory.
+				// -------------------------------------
 				css_dir: 'css',
-				// Font assets directory
+
+				// -------------------------------------
+				// Font assets directory.
+				// -------------------------------------
 				fonts_dir: 'fonts',
-				// Name of your main Sass file and consequent CSS file
+
+				// -------------------------------------
+				// Name of your main Sass file and
+				// consequent CSS file.
+				// -------------------------------------
 				sass_file: 'style'
 			},
 
@@ -46,19 +83,40 @@ module.exports = function( grunt ) {
 			// WordPress specific settings
 			// -------------------------------------
 			wpInfo: {
-				// Path to wp-content relative to the project root
+				// -------------------------------------
+				// Path to wp-content relative to the
+				// project root.
+				// -------------------------------------
 				wp_content: 'build/wp-content',
-				// WordPress theme directory name
+
+				// -------------------------------------
+				// WordPress theme directory name.
+				// -------------------------------------
 				theme_name: 'my-project',
-				// Theme assets directory
+
+				// -------------------------------------
+				// Theme assets directory.
+				// -------------------------------------
 				assets_dir: 'assets',
-				// Theme images directory
+
+				// -------------------------------------
+				// Theme images directory.
+				// -------------------------------------
 				img_dir: 'img',
-				// Theme Javascript directory
+
+				// -------------------------------------
+				// Theme Javascript directory.
+				// -------------------------------------
 				js_dir: 'js',
-				// Theme CSS directory
+
+				// -------------------------------------
+				// Theme CSS directory.
+				// -------------------------------------
 				css_dir: 'css',
-				// Theme fonts directory
+
+				// -------------------------------------
+				// Theme fonts directory.
+				// -------------------------------------
 				fonts_dir: 'fonts',
 			},
 
@@ -72,7 +130,7 @@ module.exports = function( grunt ) {
 
 			// -------------------------------------
 			// Array of paths to Javascript files
-			// for inclusion in the HEADER
+			// for inclusion in the HEADER.
 			// -------------------------------------
 			concatHead: [
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js',
@@ -82,7 +140,7 @@ module.exports = function( grunt ) {
 
 			// -------------------------------------
 			// Array of paths to Javascript files
-			// for inclusion in the HEADER for IE
+			// for inclusion in the HEADER for IE.
 			// -------------------------------------
 			concatHeadIE: [
 				'bower_components/es5-shim/es5-shim.js',
@@ -94,13 +152,14 @@ module.exports = function( grunt ) {
 
 			// -------------------------------------
 			// Array of paths to Javascript files
-			// for inclusion in the FOOTER
+			// for inclusion in the FOOTER.
 			// -------------------------------------
 			concatFoot: [
 				'bower_components/underscore/underscore.js',
 				// 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
 				// 'bower_components/foundation/js/foundation.js',
-				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_navigation.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/parts/_skip-link.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/parts/_navigation.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
 			],
 
@@ -123,7 +182,7 @@ module.exports = function( grunt ) {
 			// `cwd` if specified.
 			// -------------------------------------
 			syncAssets: [
-				// Example to use a basis for any new Bower folder/file syncing.
+				// Example to use as basis for any new Bower folder/file syncing.
 				// { cwd: 'bower_components', src: ['path/**'], dest: 'dest/'}
 				{
 					src: ['<%= siteInfo.assets_path %>/<%= siteInfo.fonts_dir %>/**'],
@@ -131,20 +190,20 @@ module.exports = function( grunt ) {
 				}
 			]
 		}
-	} );
+	});
 	// -----------------------------------------------------------------------------
-	// Provides a summary of the time tasks have taken
+	// Provides a summary of the time tasks have taken.
 	// -----------------------------------------------------------------------------
-	require( 'time-grunt' )( grunt );
+	require('time-grunt')(grunt);
 
 	// -----------------------------------------------------------------------------
-	// Silences grunt-newer
+	// Silences grunt-newer.
 	// https://github.com/tschaub/grunt-newer/issues/52#issuecomment-59397284
 	// -----------------------------------------------------------------------------
 	var origLogHeader = grunt.log.header;
-	grunt.log.header = function( msg ) {
-		if ( !/newer(-postrun)?:/.test( msg ) ) {
-			origLogHeader.apply( this, arguments );
+	grunt.log.header = function(msg) {
+		if (!/newer(-postrun)?:/.test(msg)) {
+			origLogHeader.apply(this, arguments);
 		}
 	};
 };

@@ -1,7 +1,9 @@
 // Sync Task - https://github.com/tomusdrw/grunt-sync
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Sync bower assets into the theme
+	// Sync local or Bower assets into the
+	// theme at the start of each re-build.
+	// -------------------------------------
 	sync_assets: {
 		files: '<%= syncAssets %>',
 	},

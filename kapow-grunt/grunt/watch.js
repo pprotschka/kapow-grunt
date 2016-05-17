@@ -7,7 +7,8 @@ module.exports = {
 		spawn: false
 	},
 
-	// Process plugin code
+	// Process plugin code.
+	// -------------------------------------
 	code_plugins: {
 	  files: [ '<%= wpPlugins %>' ],
 	  tasks: [
@@ -17,7 +18,8 @@ module.exports = {
 	  ]
 	},
 
-	// Process theme code
+	// Process theme code.
+	// -------------------------------------
 	code_theme: {
 	  files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
 	  tasks: [
@@ -27,7 +29,8 @@ module.exports = {
 	  ]
 	},
 
-	// Minify JPG & PNG images
+	// Minify JPG & PNG images.
+	// -------------------------------------
 	images_jpg: {
 		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.{jpg,png,gif}' ],
 		tasks: [
@@ -36,7 +39,8 @@ module.exports = {
 		]
 	},
 
-	// Minify SVG images
+	// Minify SVG images.
+	// -------------------------------------
 	images_svg: {
 			files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.svg' ],
 			tasks: [
@@ -45,7 +49,8 @@ module.exports = {
 			]
 	},
 
-	// Process scripts
+	// Process scripts.
+	// -------------------------------------
 	scripts: {
 		files: [
 			'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
@@ -62,7 +67,8 @@ module.exports = {
 		]
 	},
 
-	// Process styles
+	// Process styles.
+	// -------------------------------------
 	styles: {
 		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss' ],
 		tasks: [

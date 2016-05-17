@@ -1,7 +1,10 @@
 // Modernizr Task - https://github.com/Modernizr/grunt-modernizr
 // ----------------------------------------------------------------------------
 module.exports = {
-    // Generate a custom Modernizr build based on checks found in our Sass & JS
+    // Generate a custom Modernizr build
+    // based on the checks found in our
+    // Sass & Javascript.
+    // -------------------------------------
     custom: {
         "cache": true,
         "uglify": false,

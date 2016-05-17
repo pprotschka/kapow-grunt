@@ -2,13 +2,17 @@
 // ----------------------------------------------------------------------------
 module.exports = {
     options: {
-        plugins: [{
+        plugins: [
+        {
             removeTitle: true
-        }, {
+        },
+        {
             removeDimensions: true
-        }, {
+        },
+        {
             removeStyleElement: true
-        }, {
+        },
+        {
             sortAttrs: true
         }]
     },

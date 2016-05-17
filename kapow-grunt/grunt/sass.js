@@ -1,7 +1,8 @@
 // Sass Task - https://github.com/sindresorhus/grunt-sass
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Generate CSS from our Sass files
+	// Generate CSS from our Sass files.
+	// -------------------------------------
 	sass: {
 		options: {
 			sourceMap: true,

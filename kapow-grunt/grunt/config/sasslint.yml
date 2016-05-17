@@ -1,5 +1,5 @@
 # We only want the really important issues,
-# so let's ignore some formatting errors
+# so let's ignore some formatting errors.
 linters:
   Indentation:
     enabled: false

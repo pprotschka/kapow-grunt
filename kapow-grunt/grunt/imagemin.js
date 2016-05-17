@@ -1,7 +1,9 @@
 // Imagemin Task - https://github.com/gruntjs/grunt-contrib-imagemin
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Place minified versions of the image assets in the theme
+	// Place minified versions of the image
+	// assets in the theme.
+	// -------------------------------------
 	images: {
 		options: {
 			progressive: true

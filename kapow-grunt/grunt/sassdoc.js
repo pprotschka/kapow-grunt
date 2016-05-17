@@ -1,7 +1,8 @@
 // SassDoc Task - https://github.com/SassDoc/grunt-sassdoc
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Generate documentation for our Sass
+	// Generate documentation for our Sass.
+	// -------------------------------------
 	options: {
 		dest: '<%= siteInfo.docs_path %>/sass'
 	},
