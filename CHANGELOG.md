@@ -1,14 +1,24 @@
-76 seconds ago - **Added Grunticon config** (6afe5a5)
+7 minutes ago - **Tweaked Modernizr include filename** (5ab88e1)
 
-29 minutes ago - **Added some useful tests to Modernizr config** (506700e)
+11 minutes ago - **Fixed incorrect paths for outputting unminfied JS assets in the theme** (7873887)
 
-31 minutes ago - **Unminified CSS now output to the theme** (e4928d9)
+18 minutes ago - **Bug fixes** (c4bdd6a)
 
-47 minutes ago - **Concat task now outputs unminified JS assets to the theme** (72ad3a6)
+37 minutes ago - **Bug - missing comma** (ee5a3d5)
 
-58 minutes ago - **Updated README** (845e069)
+2 hours ago - **Updated changelog** (13c1f70)
 
-62 minutes ago - **Added CHANGELOG** (c9c0a5e)
+2 hours ago - **Added Grunticon config** (6afe5a5)
+
+3 hours ago - **Added some useful tests to Modernizr config** (506700e)
+
+3 hours ago - **Unminified CSS now output to the theme** (e4928d9)
+
+3 hours ago - **Concat task now outputs unminified JS assets to the theme** (72ad3a6)
+
+3 hours ago - **Updated README** (845e069)
+
+3 hours ago - **Added CHANGELOG** (c9c0a5e)
 
 3 months ago - **Comment tweak** (83da769)
 
