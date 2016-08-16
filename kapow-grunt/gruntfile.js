@@ -73,6 +73,11 @@ module.exports = function(grunt) {
 				fonts_dir: 'fonts',
 
 				// -------------------------------------
+				// Icon assets directory
+				// -------------------------------------
+				icons_dir: 'ico',
+
+				// -------------------------------------
 				// Name of your main Sass file and
 				// consequent CSS file.
 				// -------------------------------------
@@ -118,6 +123,11 @@ module.exports = function(grunt) {
 				// Theme fonts directory.
 				// -------------------------------------
 				fonts_dir: 'fonts',
+
+				// -------------------------------------
+				// Theme icons directory
+				icons_dir: 'ico'
+				// -------------------------------------
 			},
 
 			// -------------------------------------
@@ -134,6 +144,7 @@ module.exports = function(grunt) {
 			// -------------------------------------
 			concatHead: [
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_grunticon-loader.js',
 				'bower_components/picturefill/dist/picturefill.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
 			],

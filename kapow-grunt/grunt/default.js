@@ -6,6 +6,8 @@ module.exports = function( grunt ) {
 		'sync',
 		// "lint",
 		"spritesmith",
+		"grunticon",
+		"copy:grunticon",
 		"sass",
 		"postcss",
 		"copy:unminified_css",

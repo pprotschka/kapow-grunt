@@ -18,5 +18,13 @@ module.exports = {
 		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
 		src: [ '*.css', '!*.min.css', '!*.css.map' ],
 		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/css'
+	},
+	grunticon: {
+		files: [
+			{
+				src: ['<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.icons_dir %>/grunticon-loader.js'],
+				dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_grunticon-loader.js'
+			}
+		]
 	}
 };
