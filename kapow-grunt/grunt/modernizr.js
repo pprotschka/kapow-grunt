@@ -23,7 +23,7 @@ module.exports = {
             "cssgradients",
             "csstransforms",
             "csstransitions",
-            "csscolumns"
+            "csscolumns",
             "cssvhunit",
             "cssvwunit",
             "placeholder",
