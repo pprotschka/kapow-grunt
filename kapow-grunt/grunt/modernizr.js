@@ -17,7 +17,21 @@ module.exports = {
             "testProp",
             "setClasses"
         ],
-        "tests": [],
+        "tests": [
+            "flexbox,"
+            "cssanimations",
+            "cssgradients",
+            "csstransforms",
+            "csstransitions",
+            "csscolumns"
+            "cssvhunit",
+            "cssvwunit",
+            "placeholder",
+            "localstorage",
+            "inlinesvg",
+            "canvas",
+            "shapes"
+        ],
         "excludeTests": [
             "hidden"
         ],
