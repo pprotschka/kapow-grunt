@@ -1,3 +1,15 @@
+76 seconds ago - **Added Grunticon config** (6afe5a5)
+
+29 minutes ago - **Added some useful tests to Modernizr config** (506700e)
+
+31 minutes ago - **Unminified CSS now output to the theme** (e4928d9)
+
+47 minutes ago - **Concat task now outputs unminified JS assets to the theme** (72ad3a6)
+
+58 minutes ago - **Updated README** (845e069)
+
+62 minutes ago - **Added CHANGELOG** (c9c0a5e)
+
 3 months ago - **Comment tweak** (83da769)
 
 3 months ago - **Merge branch 'master' of https://github.com/mkdo/kapow-grunt** (fd0a736)
