@@ -36,7 +36,7 @@ module.exports = {
             "hidden"
         ],
         "devFile": "bower_components/modernizr/modernizr.js",
-        "dest": "<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js",
+        "dest": "<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_modernizr-custom.js",
         "crawl": true,
         "files": {
             "src": [

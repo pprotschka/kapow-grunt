@@ -143,7 +143,7 @@ module.exports = function(grunt) {
 			// for inclusion in the HEADER.
 			// -------------------------------------
 			concatHead: [
-				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_modernizr-custom.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_grunticon-loader.js',
 				'bower_components/picturefill/dist/picturefill.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
