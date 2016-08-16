@@ -7,22 +7,46 @@ module.exports = {
 	// Header JS.
 	// -------------------------------------
 	header: {
-		src: [ '<%= concatHead %>' ],
-		dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.tmp.js',
+		files: [
+		{
+			src: [ '<%= concatHead %>' ],
+			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
+		},
+		{
+			src: [ '<%= concatHead %>' ],
+			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.tmp.js'
+		}
+		],
 		nonull: true
 	},
 	// Header JS for IE.
 	// -------------------------------------
 	header_ie: {
-		src: [ '<%= concatHeadIE %>' ],
-		dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header_ie.tmp.js',
+		files: [
+		{
+			src: [ '<%= concatHeadIE %>' ],
+			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header_ie.js'
+		},
+		{
+			src: [ '<%= concatHeadIE %>' ],
+			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header_ie.tmp.js'
+		}
+		],
 		nonull: true
 	},
 	// Footer JS.
 	// -------------------------------------
 	footer: {
-		src: [ '<%= concatFoot %>' ],
-		dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.tmp.js',
+		files: [
+		{
+			src: [ '<%= concatFoot %>' ],
+			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
+		},
+		{
+			src: [ '<%= concatFoot %>' ],
+			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.tmp.js'
+		}
+		],
 		nonull: true
 	}
 };
