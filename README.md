@@ -97,7 +97,11 @@ Several Grunt commands are at your disposal:
 - 
 **NB:** The `docs` and `lint` commands assume you have the required dependencies installed as detailed earlier.
 
-## Changelog
+## Release Notes
+
+For a full list of changes, see CHANGELOG.md.
+
+**1.5.0** - *16.08.2016* - Several updates.
 
 **1.4.0** - *17.05.2016* - General documentation review and updates.
 
