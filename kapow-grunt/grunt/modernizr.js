@@ -18,7 +18,7 @@ module.exports = {
             "setClasses"
         ],
         "tests": [
-            "flexbox,"
+            "flexbox",
             "cssanimations",
             "cssgradients",
             "csstransforms",
