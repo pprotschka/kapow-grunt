@@ -8,6 +8,7 @@ module.exports = function( grunt ) {
 		"spritesmith",
 		"sass",
 		"postcss",
+		"copy:unminified_css",
 		"cssmin",
 		"maxfilesize:css",
 		"selector4096",

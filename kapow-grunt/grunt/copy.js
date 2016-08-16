@@ -12,5 +12,11 @@ module.exports = {
 		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
 		src: [ '*.map', '!style.css.map' ],
 		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/css'
+	},
+	unminified_css: {
+		expand: true,
+		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
+		src: [ '*.css', '!*.min.css', '!*.css.map' ],
+		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/css'
 	}
 };

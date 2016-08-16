@@ -12,7 +12,16 @@ module.exports = {
 			require( 'pixrem' )()
 		]
 	},
-	css: {
-		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.sass_file %>.css'
+	styles: {
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.sass_file %>.css',
+	},
+	rtl: {
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/rtl.css',
+	},
+	admin: {
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/admin.css',
+	},
+	editor: {
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/editor.css',
 	}
 }
