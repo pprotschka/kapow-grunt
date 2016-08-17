@@ -1,24 +1,28 @@
-7 minutes ago - **Tweaked Modernizr include filename** (5ab88e1)
+# Changelog 
 
-11 minutes ago - **Fixed incorrect paths for outputting unminfied JS assets in the theme** (7873887)
+10 hours ago - **Updated changelog** (0f36d0e)
 
-18 minutes ago - **Bug fixes** (c4bdd6a)
+10 hours ago - **Tweaked Modernizr include filename** (5ab88e1)
 
-37 minutes ago - **Bug - missing comma** (ee5a3d5)
+10 hours ago - **Fixed incorrect paths for outputting unminfied JS assets in the theme** (7873887)
 
-2 hours ago - **Updated changelog** (13c1f70)
+10 hours ago - **Bug fixes** (c4bdd6a)
 
-2 hours ago - **Added Grunticon config** (6afe5a5)
+10 hours ago - **Bug - missing comma** (ee5a3d5)
 
-3 hours ago - **Added some useful tests to Modernizr config** (506700e)
+12 hours ago - **Updated changelog** (13c1f70)
 
-3 hours ago - **Unminified CSS now output to the theme** (e4928d9)
+12 hours ago - **Added Grunticon config** (6afe5a5)
 
-3 hours ago - **Concat task now outputs unminified JS assets to the theme** (72ad3a6)
+13 hours ago - **Added some useful tests to Modernizr config** (506700e)
 
-3 hours ago - **Updated README** (845e069)
+13 hours ago - **Unminified CSS now output to the theme** (e4928d9)
 
-3 hours ago - **Added CHANGELOG** (c9c0a5e)
+13 hours ago - **Concat task now outputs unminified JS assets to the theme** (72ad3a6)
+
+13 hours ago - **Updated README** (845e069)
+
+13 hours ago - **Added CHANGELOG** (c9c0a5e)
 
 3 months ago - **Comment tweak** (83da769)
 
@@ -208,19 +212,19 @@
 
 11 months ago - **Added grunt sync** (6134ab9)
 
-11 months ago - **Changed processor order** (0b6a7cd)
+12 months ago - **Changed processor order** (0b6a7cd)
 
-11 months ago - **Create bower.json** (d196bce)
+12 months ago - **Create bower.json** (d196bce)
 
-11 months ago - **Switched to autoprefixer from autoprefixer-core** (9399a22)
+12 months ago - **Switched to autoprefixer from autoprefixer-core** (9399a22)
 
-11 months ago - **Updated deps** (481c750)
+12 months ago - **Updated deps** (481c750)
 
-11 months ago - **Replaced aggressive merging with compat mode** (0f468d3)
+12 months ago - **Replaced aggressive merging with compat mode** (0f468d3)
 
-11 months ago - **Disabled agressive merging** (a130903)
+12 months ago - **Disabled agressive merging** (a130903)
 
-11 months ago - **Added pixrem support** (24c99cf)
+12 months ago - **Added pixrem support** (24c99cf)
 
 12 months ago - **Update README.md** (3aa22e6)
 
@@ -326,13 +330,13 @@
 
 1 year, 2 months ago - **Added sass/css file name property.** (4d88e42)
 
-1 year, 2 months ago - **Updated watch task to reflect jshint changes.** (1f7696c)
+1 year, 3 months ago - **Updated watch task to reflect jshint changes.** (1f7696c)
 
-1 year, 2 months ago - **Removed second jshint run and moved linting to the start of the default build.** (e0d99bd)
+1 year, 3 months ago - **Removed second jshint run and moved linting to the start of the default build.** (e0d99bd)
 
-1 year, 2 months ago - **Tweak to spritesmith in watch task.** (d2f8ace)
+1 year, 3 months ago - **Tweak to spritesmith in watch task.** (d2f8ace)
 
-1 year, 2 months ago - **Testing, commenting, features etc.** (9120780)
+1 year, 3 months ago - **Testing, commenting, features etc.** (9120780)
 
 1 year, 3 months ago - **Started testing/debugging initial task configurations.** (8937cb8)
 
