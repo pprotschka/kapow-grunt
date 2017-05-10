@@ -205,7 +205,7 @@ module.exports = function(grunt) {
 				// -------------------------------------
 				{
 					src: ['<%= siteInfo.assets_path %>/<%= siteInfo.fonts_dir %>/**'],
-					dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.fonts_dir %>/'
+					dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/'
 				}
 			]
 		}
