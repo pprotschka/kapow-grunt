@@ -18,6 +18,7 @@ module.exports = function( grunt ) {
 		"modernizr",
 		"concat",
 		"uglify",
+		"copy:unminified_js",
 		"newer:svgmin",
 		"newer:imagemin",
 		"clean",
