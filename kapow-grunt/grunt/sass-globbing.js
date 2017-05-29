@@ -2,10 +2,18 @@
 // ----------------------------------------------------------------------------
 module.exports = {
 
-  scss: {
+	scss: {
 		files: {
-			'src/_importMap.scss': 'src/partials/**/*.scss',
-			'src/_variablesMap.scss': ['src/variables/**/*.scss', '!src/variables/foo.css'],
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/_baseMap.scss':
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/base/**/*.scss',
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/_componentsMap.scss':
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/components/**/*.scss',
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/_modulesMap.scss':
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/modules/**/*.scss',
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/_templatesMap.scss':
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/templates/**/*.scss',
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/_vendorMap.scss':
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/vendor/**/*.scss',
 		},
 		options: {
 			useSingleQuotes: false,

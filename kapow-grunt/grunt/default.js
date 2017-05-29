@@ -8,6 +8,7 @@ module.exports = function( grunt ) {
 		"spritesmith",
 		// "grunticon",
 		// "copy:grunticon",
+		"sass-globbing",
 		"sass",
 		"postcss",
 		"copy:unminified_css",

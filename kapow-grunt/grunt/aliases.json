@@ -29,6 +29,9 @@
 	"spritesmith": [
 		"sprite"
 	],
+	"sass-globbing": [
+		"sass_globbing"
+	],
 	"legacy-browers": [
 		"maxfilesize",
 		"selector4096"
