@@ -54,7 +54,8 @@ module.exports = {
 	scripts: {
 		files: [
 			'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
-			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/modernizr-custom.js'
+			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/_modernizr-custom_h.js',
+			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/_grunticon-loader_h.js'
 		],
 		tasks: [
 			// 'jshint',

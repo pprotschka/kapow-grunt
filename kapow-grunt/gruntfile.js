@@ -51,6 +51,11 @@ module.exports = function(grunt) {
 				js_lib_dir: 'lib',
 
 				// -------------------------------------
+				// JS parts directory
+				// -------------------------------------
+				js_parts_dir: 'parts',
+
+				// -------------------------------------
 				// Sass assets directory.
 				// -------------------------------------
 				scss_dir: 'scss',
@@ -171,11 +176,19 @@ module.exports = function(grunt) {
 			// -------------------------------------
 			// Array of paths to Javascript files
 			// for inclusion in the HEADER.
+			//
+			// As a rule, include bower_components
+			// first, then theme specific files.
+			//
+			// Files that reside in the `parts/` or
+			// `lib/` directories ending with the
+			// `_f.js` suffix will be automatically
+			// included for concatenation.
 			// -------------------------------------
 			concatHead: [
-				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_modernizr-custom.js',
-				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_grunticon-loader.js',
 				'bower_components/picturefill/dist/picturefill.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/_*_h.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_parts_dir %>/_*_h.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/header.js'
 			],
 
@@ -194,13 +207,20 @@ module.exports = function(grunt) {
 			// -------------------------------------
 			// Array of paths to Javascript files
 			// for inclusion in the FOOTER.
+			//
+			// As a rule, include bower_components
+			// first, then theme specific files.
+			//
+			// Files that reside in the `parts/` or
+			// `lib/` directories ending with the
+			// `_f.js` suffix will be automatically
+			// included for concatenation.
 			// -------------------------------------
 			concatFoot: [
-				'bower_components/underscore/underscore.js',
 				// 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
 				// 'bower_components/foundation/js/foundation.js',
-				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/parts/_skip-link.js',
-				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/parts/_navigation.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/_*_f.js',
+				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_parts_dir %>/_*_f.js',
 				'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/footer.js'
 			],
 
@@ -235,7 +255,7 @@ module.exports = function(grunt) {
 				// -------------------------------------
 				{
 					src: ['<%= siteInfo.assets_path %>/<%= siteInfo.fonts_dir %>/**'],
-					dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/'
+					dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/'
 				}
 			]
 		}
