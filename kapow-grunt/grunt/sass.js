@@ -10,8 +10,7 @@ module.exports = {
 			sourceMapRoot: 'assets/css',
 			style: 'compressed',
 			includePaths: [
-				'../../bower_components/',
-				'../../../../bower_components/',
+				'bower_components/',
 			]
 		},
 		files: [ {
