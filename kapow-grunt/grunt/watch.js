@@ -71,7 +71,10 @@ module.exports = {
 	// Process styles.
 	// -------------------------------------
 	styles: {
-		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/**/*.scss' ],
+		files: [
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/**/*.scss',
+			'!<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/*.scss',
+		],
 		tasks: [
 			// 'scsslint',
 			'spritesmith',

@@ -16,7 +16,10 @@ module.exports = {
 		files: [ {
 			expand: true,
 			cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>',
-			src: [ '*.scss' ],
+			src: [
+				'*.scss',
+				'!/glob/*.scss'
+			],
 			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
 			ext: '.css'
 		} ]

@@ -7,6 +7,9 @@ module.exports = {
 		dest: '<%= siteInfo.docs_path %>/<%= siteInfo.docs_dir_scss %>'
 	},
 	sass: {
-		src: '<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>',
+		src: [
+			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>',
+			'!<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/*.scss',
+		]
 	}
 };
