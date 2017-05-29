@@ -30,7 +30,9 @@ module.exports = {
             "localstorage",
             "inlinesvg",
             "canvas",
-            "shapes"
+            "shapes",
+            "svg",
+            "video"
         ],
         "excludeTests": [
             "hidden"
