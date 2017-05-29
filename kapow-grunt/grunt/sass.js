@@ -12,7 +12,7 @@ module.exports = {
 		},
 		files: [ {
 			expand: true,
-			cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>',
+			cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>',
 			src: [ '*.scss' ],
 			dest: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
 			ext: '.css'

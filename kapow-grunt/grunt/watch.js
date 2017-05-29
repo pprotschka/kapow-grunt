@@ -21,7 +21,7 @@ module.exports = {
 	// Process theme code.
 	// -------------------------------------
 	code_theme: {
-	  files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
+	  files: [ '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/**/*.php' ],
 	  tasks: [
 		'phplint:theme',
 		// 'phpdoc:theme',
@@ -42,11 +42,11 @@ module.exports = {
 	// Minify SVG images.
 	// -------------------------------------
 	images_svg: {
-			files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.svg' ],
-			tasks: [
-					'newer:svgmin',
-					'notify:images'
-			]
+		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.img_dir %>/**/*.svg' ],
+		tasks: [
+			'newer:svgmin',
+			'notify:images'
+		]
 	},
 
 	// Process scripts.
@@ -54,7 +54,7 @@ module.exports = {
 	scripts: {
 		files: [
 			'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
-			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js'
+			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/modernizr-custom.js'
 		],
 		tasks: [
 			// 'jshint',
@@ -70,15 +70,14 @@ module.exports = {
 	// Process styles.
 	// -------------------------------------
 	styles: {
-		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.sass_dir %>/**/*.scss' ],
+		files: [ '<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/**/*.scss' ],
 		tasks: [
 			// 'scsslint',
 			'spritesmith',
 			'sass',
 			'postcss',
 			'cssmin',
-			'maxfilesize:css',
-			'selector4096',
+			'legacy-browsers',
 			'copy:main_sourcemap',
 			'copy:other_sourcemaps',
 			// 'sassdoc',

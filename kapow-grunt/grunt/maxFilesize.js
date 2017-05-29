@@ -8,6 +8,6 @@ module.exports = {
 			//  -------------------------------------
 			maxBytes: 288000
 		},
-		src: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/style.css' ]
+		src: [ '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= siteInfo.scss_file %>.css' ]
 	}
 }

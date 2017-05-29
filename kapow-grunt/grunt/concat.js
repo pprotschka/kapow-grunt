@@ -8,7 +8,7 @@ module.exports = {
 	// -------------------------------------
 	header: {
 		src: ['<%= concatHead %>'],
-		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header.js',
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header.js',
 		nonull: true
 	},
 	header_min: {
@@ -20,7 +20,7 @@ module.exports = {
 	// -------------------------------------
 	header_ie: {
 		src: ['<%= concatHeadIE %>'],
-		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header_ie.js',
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header_ie.js',
 		nonull: true
 	},
 	header_ie_min: {
@@ -32,7 +32,7 @@ module.exports = {
 	// -------------------------------------
 	footer: {
 		src: ['<%= concatFoot %>'],
-		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/footer.js',
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/footer.js',
 		nonull: true
 	},
 	footer_min: {

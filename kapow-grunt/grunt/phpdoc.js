@@ -7,15 +7,15 @@ module.exports = {
 	all: {
 		src: [
 			'<%= wpPlugins %>',
-			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>'
+			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>'
 		],
-		dest: '<%= siteInfo.docs_path %>/php'
+		dest: '<%= siteInfo.docs_path %>/<%= siteInfo.docs_dir_php %>'
 	},
 	// Generate theme documentation.
 	// -------------------------------------
 	theme: {
-		src: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>' ],
-		dest: '<%= siteInfo.docs_path %>/php'
+		src: [ '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>' ],
+		dest: '<%= siteInfo.docs_path %>/<%= siteInfo.docs_dir_php %>'
 	},
 	// Generate plugin documentation.
 	// -------------------------------------
@@ -24,6 +24,6 @@ module.exports = {
 			'<%= wpInfo.wp_content %>/plugins/index.php', // hack to ensure phpdoc doesn't fail if no plugins are specified
 			'<%= wpPlugins %>'
 		],
-		dest: '<%= siteInfo.docs_path %>/php'
+		dest: '<%= siteInfo.docs_path %>/<%= siteInfo.docs_dir_php %>'
 	}
 }

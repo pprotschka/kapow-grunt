@@ -7,8 +7,8 @@ module.exports = {
 		options: {
 			compatibility: 'ie8'
 		},
-		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.sass_file %>.css',
-		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/style.css'
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.scss_file %>.css',
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= siteInfo.scss_file %>.css'
 	},
 	// WP Editor & Admin Styles.
 	// -------------------------------------
@@ -18,9 +18,9 @@ module.exports = {
 			cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
 			src: [
 				'*.css',
-				'!<%= siteInfo.sass_file %>.css'
+				'!<%= siteInfo.scss_file %>.css'
 			],
-			dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.css_dir %>',
+			dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.css_dir %>',
 			ext: '.min.css'
 		} ]
 	}

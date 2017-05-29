@@ -18,35 +18,35 @@ module.exports = {
 	// -------------------------------------
 	header: {
 		files: {
-			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header.min.js': [ '<%= concat.header.dest %>' ]
+			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header.min.js': [ '<%= concat.header.dest %>' ]
 		}
 	},
 	// Header JS for IE.
 	// -------------------------------------
 	header_ie: {
 		files: {
-			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header_ie.min.js': [ '<%= concat.header_ie.dest %>' ]
+			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header_ie.min.js': [ '<%= concat.header_ie.dest %>' ]
 		}
 	},
 	// Footer JS.
 	// -------------------------------------
 	footer: {
 		files: {
-			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/footer.min.js': [ '<%= concat.footer.dest %>' ]
+			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/footer.min.js': [ '<%= concat.footer.dest %>' ]
 		}
 	},
 	// Customizer JS.
  	// -------------------------------------
 	customizer: {
 		files: {
-			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/customizer.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/customizer.js' ]
+			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/customizer.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/customizer.js' ]
 		}
 	},
 	// Admin JS.
 	// -------------------------------------
 	admin: {
 		files: {
-			'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/admin.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/admin.js' ]
+			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/admin.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/admin.js' ]
 		}
 	},
 };

@@ -4,26 +4,26 @@ module.exports = {
 	main_sourcemap: {
 		expand: true,
 		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
-		src: [ 'style.css.map' ],
-		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/'
+		src: [ '<%= siteInfo.scss_file %>.css.map' ],
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/'
 	},
 	other_sourcemaps: {
 		expand: true,
 		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
-		src: [ '*.map', '!style.css.map' ],
-		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/css'
+		src: [ '*.map', '!<%= siteInfo.scss_file %>.css.map' ],
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/css'
 	},
 	unminified_css: {
 		expand: true,
 		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
 		src: [ '*.css', '!*.min.css', '!*.css.map' ],
-		dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/css'
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/css'
 	},
 	grunticon: {
 		files: [
 			{
-				src: ['<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.icons_dir %>/grunticon-loader.js'],
-				dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/_grunticon-loader.js'
+				src: ['<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.icons_dir %>/grunticon-loader.js'],
+				dest: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/_grunticon-loader.js'
 			}
 		]
 	}

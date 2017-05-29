@@ -30,18 +30,6 @@ module.exports = function(grunt) {
 				fancy_name: 'My Project',
 
 				// -------------------------------------
-				// Documentation path relative to the
-				// project root - NO trailing slash.
-				// -------------------------------------
-				docs_path: 'docs',
-
-				// -------------------------------------
-				// Reports path relative to the project
-				// root - NO trailing slash.
-				// -------------------------------------
-				reports_path: 'reports',
-
-				// -------------------------------------
 				// Assets path relative to the project
 				// root - NO trailing slash.
 				// -------------------------------------
@@ -58,9 +46,25 @@ module.exports = function(grunt) {
 				js_dir: 'js',
 
 				// -------------------------------------
+				// JS libraries directory
+				// -------------------------------------
+				js_lib_dir: 'lib',
+
+				// -------------------------------------
 				// Sass assets directory.
 				// -------------------------------------
-				sass_dir: 'sass',
+				scss_dir: 'scss',
+
+				// -------------------------------------
+				// Sass base directory.
+				// -------------------------------------
+				scss_base_dir: 'base',
+
+				// -------------------------------------
+				// Name of your main Sass file and
+				// consequent CSS file.
+				// -------------------------------------
+				sass_file: 'style'
 
 				// -------------------------------------
 				// CSS assets directory.
@@ -75,13 +79,34 @@ module.exports = function(grunt) {
 				// -------------------------------------
 				// Icon assets directory
 				// -------------------------------------
-				icons_dir: 'ico',
+				icons_dir: 'icons',
 
 				// -------------------------------------
-				// Name of your main Sass file and
-				// consequent CSS file.
+				// Documentation path relative to the
+				// project root - NO trailing slash.
 				// -------------------------------------
-				sass_file: 'style'
+				docs_path: 'docs',
+
+				// -------------------------------------
+				// JS docs directory.
+				// -------------------------------------
+				docs_dir_js: 'js',
+
+				// -------------------------------------
+				// PHP docs directory.
+				// -------------------------------------
+				docs_dir_php: 'php',
+
+				// -------------------------------------
+				// SCSS docs directory.
+				// -------------------------------------
+				docs_dir_scss: 'scss',
+
+				// -------------------------------------
+				// Reports path relative to the project
+				// root - NO trailing slash.
+				// -------------------------------------
+				reports_path: 'reports'
 			},
 
 			// -------------------------------------
@@ -93,6 +118,11 @@ module.exports = function(grunt) {
 				// project root.
 				// -------------------------------------
 				wp_content: 'build/wp-content',
+
+				// -------------------------------------
+				// Themes directory.
+				// -------------------------------------
+				themes_dir: 'themes',
 
 				// -------------------------------------
 				// WordPress theme directory name.

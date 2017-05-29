@@ -3,8 +3,8 @@
 module.exports = {
 	all: [
 		'<%= wpPlugins %>',
-		'<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php'
+		'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/**/*.php'
 	],
 	plugins: [ '<%= wpPlugins %>' ],
-	theme: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ]
+	theme: [ '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/**/*.php' ]
 };

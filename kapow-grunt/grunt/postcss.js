@@ -13,7 +13,7 @@ module.exports = {
 		]
 	},
 	styles: {
-		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.sass_file %>.css',
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.scss_file %>.css',
 	},
 	rtl: {
 		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/rtl.css',

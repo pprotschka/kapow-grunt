@@ -6,7 +6,7 @@ module.exports = {
 			expand: true,
 			cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.icons_dir %>/',
 			src: ['*.svg', '*.png'],
-			dest: '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.icons_dir %>',
+			dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.icons_dir %>',
 		}],
 		options: {
 			enhanceSVG: true,

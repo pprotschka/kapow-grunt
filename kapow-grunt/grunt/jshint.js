@@ -21,7 +21,7 @@ module.exports = {
 		},
 		src: [
 			'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/**/*.js',
-			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/lib/modernizr-custom.js'
+			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/modernizr-custom.js'
 		]
 	}
 };
