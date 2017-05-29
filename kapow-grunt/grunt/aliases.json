@@ -28,5 +28,9 @@
 	],
 	"spritesmith": [
 		"sprite"
+	],
+	"legacy-browers": [
+		"maxfilesize",
+		"selector4096",
 	]
 }
