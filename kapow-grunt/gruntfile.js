@@ -69,7 +69,7 @@ module.exports = function(grunt) {
 				// Name of your main Sass file and
 				// consequent CSS file.
 				// -------------------------------------
-				sass_file: 'style'
+				sass_file: 'style',
 
 				// -------------------------------------
 				// CSS assets directory.

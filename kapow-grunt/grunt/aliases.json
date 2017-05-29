@@ -31,6 +31,6 @@
 	],
 	"legacy-browers": [
 		"maxfilesize",
-		"selector4096",
+		"selector4096"
 	]
 }
