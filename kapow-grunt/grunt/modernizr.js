@@ -37,7 +37,7 @@ module.exports = {
         "excludeTests": [
             "hidden"
         ],
-        "devFile": "bower_components/modernizr/modernizr.js",
+        "devFile": "bower_components/modernizr/src/Modernizr.js",
         "dest": "<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/_modernizr-custom_h.js",
         "crawl": true,
         "files": {
