@@ -5,13 +5,11 @@ module.exports = {
 	// -------------------------------------
 	sass: {
 		options: {
-			sourceMap: true,
-			sourceMapContents: true,
-			sourceMapRoot: 'assets/css',
-			style: 'compressed',
 			includePaths: [
 				'bower_components/',
-			]
+			],
+			sourceMap: true,
+			style: 'compressed'
 		},
 		files: [ {
 			expand: true,

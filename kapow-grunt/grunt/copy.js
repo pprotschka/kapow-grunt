@@ -1,13 +1,7 @@
 // Copy Task - https://github.com/gruntjs/grunt-contrib-copy
 // ----------------------------------------------------------------------------
 module.exports = {
-	main_sourcemap: {
-		expand: true,
-		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
-		src: [ '<%= siteInfo.scss_file %>.css.map' ],
-		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/'
-	},
-	other_sourcemaps: {
+	sourcemaps: {
 		expand: true,
 		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/',
 		src: [ '*.map', '!<%= siteInfo.scss_file %>.css.map' ],

@@ -4,7 +4,7 @@ module.exports = {
 	// Remove the temporary JS files created
 	// by the grunt-contrib-concat task.
 	// -------------------------------------
-	clean_js: {
+	clean: {
 		src: [
 			'<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/*.tmp.js',
 			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/*.scss'

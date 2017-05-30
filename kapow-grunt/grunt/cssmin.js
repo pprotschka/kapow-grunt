@@ -5,7 +5,10 @@ module.exports = {
 	// -------------------------------------
 	frontend: {
 		options: {
-			compatibility: 'ie8'
+			compatibility: 'ie8',
+			sourceMap: true,
+			outFile: '<%= siteInfo.scss_file %>.css.map',
+			rebase: true
 		},
 		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.scss_file %>.css',
 		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= siteInfo.scss_file %>.css'
@@ -13,6 +16,9 @@ module.exports = {
 	// WP Editor & Admin Styles.
 	// -------------------------------------
 	backend: {
+		options: {
+			sourceMap: false,
+		},
 		files: [ {
 			expand: true,
 			cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
