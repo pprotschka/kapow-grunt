@@ -9,7 +9,9 @@ module.exports = {
 			require( 'autoprefixer' )( {
 				browsers: [ '> 5%', 'last 2 versions' ]
 			} ),
-			require( 'pixrem' )()
+			require( 'pixrem' )( {
+				atrules: true
+			} )
 		]
 	},
 	styles: {
