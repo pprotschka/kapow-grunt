@@ -11,7 +11,7 @@ module.exports = function( grunt ) {
 		"sass-globbing",
 		"sass",
 		"postcss",
-		// "cssmin",
+		"cssmin",
 		"copy:unminified_css",
 		// "legacy-browsers",
 		"copy:sourcemaps",
