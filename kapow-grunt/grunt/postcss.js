@@ -15,20 +15,16 @@ module.exports = {
 			} )
 		]
 	},
-	frontend: {
+	styles: {
 		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.scss_file %>.css',
-		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= siteInfo.scss_file %>.css'
 	},
-	backend: {
-		files: [ {
-			expand: true,
-			cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>',
-			src: [
-				'*.css',
-				'!<%= siteInfo.scss_file %>.css'
-			],
-			dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.css_dir %>',
-			ext: '.min.css'
-		} ]
+	rtl: {
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/rtl.css',
+	},
+	admin: {
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/admin.css',
+	},
+	editor: {
+		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/editor.css',
 	}
 }
