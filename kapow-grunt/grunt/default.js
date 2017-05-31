@@ -4,7 +4,9 @@
 module.exports = function( grunt ) {
 	grunt.registerTask( 'default', [
 		'sync',
-		// "lint",
+		// "phplint",
+		// "sasslint",
+		// "jshint",
 		"spritesmith",
 		"grunticon",
 		"copy:grunticon",
@@ -22,7 +24,9 @@ module.exports = function( grunt ) {
 		"newer:svgmin",
 		"newer:imagemin",
 		"clean",
-		// "document",
+		// "phpdoc",
+		// "sassdoc",
+		// "jsdoc",
 		"notify:build"
 	] );
 };
