@@ -16,8 +16,9 @@ module.exports = {
 	unminified_js: {
 		expand: true,
 		cwd: '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/',
-		src: [ '*.js', '!*.tmp.js', '!footer.js', '!header.js', '!header_ie.js' ],
-		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>'
+		src: [ '*.tmp.js' ],
+		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>',
+		ext: '.js'
 	},
 	grunticon: {
 		files: [

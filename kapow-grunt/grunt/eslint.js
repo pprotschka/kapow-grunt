@@ -7,7 +7,7 @@ module.exports = {
 		// Output the results to file.
 		outputFile: '<%= siteInfo.reports_path %>/eslint.txt',
 		// Ignore warnings and report only errors.
-		quiet: true,
+		quiet: true
 	},
 	// Lint our Javascript.
 	// -------------------------------------

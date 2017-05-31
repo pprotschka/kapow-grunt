@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------------------
 module.exports = function( grunt ) {
 	grunt.registerTask( 'default', [
-		'sync',
+		"sync",
 		// "phplint",
 		// "sasslint",
 		// "eslint",
@@ -19,6 +19,7 @@ module.exports = function( grunt ) {
 		"copy:sourcemaps",
 		"modernizr",
 		"concat",
+		"babel",
 		"uglify",
 		"copy:unminified_js",
 		"newer:svgmin",
