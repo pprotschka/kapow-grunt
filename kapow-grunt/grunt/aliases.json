@@ -32,7 +32,7 @@
 	"sass-globbing": [
 		"sass_globbing"
 	],
-	"legacy-browers": [
+	"legacy-browsers": [
 		"maxfilesize",
 		"selector4096"
 	]
