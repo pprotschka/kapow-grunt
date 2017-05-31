@@ -58,7 +58,7 @@ module.exports = {
 			'!<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/<%= siteInfo.js_lib_dir %>/_grunticon-loader_h.js'
 		],
 		tasks: [
-			// 'jshint',
+			// 'eslint',
 			'modernizr',
 			'concat',
 			'uglify',

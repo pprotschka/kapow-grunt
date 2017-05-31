@@ -18,7 +18,7 @@
 		"notify:images"
 	],
 	"lint": [
-		"jshint",
+		"eslint",
 		"phplint:all",
 		"sasslint",
 		"notify:linting"
