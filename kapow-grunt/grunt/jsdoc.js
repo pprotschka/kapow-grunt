@@ -1,6 +1,7 @@
 // JSDoc Task - https://github.com/krampstudio/grunt-jsdoc
 // ----------------------------------------------------------------------------
 module.exports = {
+
 	// Generate documentation for our JS.
 	// -------------------------------------
 	jsdoc: {

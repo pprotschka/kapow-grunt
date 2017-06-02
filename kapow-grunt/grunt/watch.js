@@ -12,9 +12,9 @@ module.exports = {
 	code_plugins: {
 	  files: [ '<%= wpPlugins %>' ],
 	  tasks: [
-		'phplint:plugins',
+		// 'phplint:plugins',
 		// 'phpdoc:plugins',
-		'notify:code_plugins'
+		// 'notify:code_plugins'
 	  ]
 	},
 
@@ -23,9 +23,9 @@ module.exports = {
 	code_theme: {
 	  files: [ '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/**/*.php' ],
 	  tasks: [
-		'phplint:theme',
+		// 'phplint:theme',
 		// 'phpdoc:theme',
-		'notify:code_theme'
+		// 'notify:code_theme'
 	  ]
 	},
 

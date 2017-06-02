@@ -1,6 +1,7 @@
 // CSSMin Task - https://github.com/gruntjs/grunt-contrib-cssmin
 // ----------------------------------------------------------------------------
 module.exports = {
+
 	// Front End Styles.
 	// -------------------------------------
 	frontend: {
@@ -13,7 +14,7 @@ module.exports = {
 		src: '<%= siteInfo.assets_path %>/<%= siteInfo.css_dir %>/<%= siteInfo.scss_file %>.css',
 		dest: '<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= siteInfo.scss_file %>.css'
 	},
-	// WP Editor & Admin Styles.
+	// Back End Styles.
 	// -------------------------------------
 	backend: {
 		options: {

@@ -1,12 +1,10 @@
 // ESLint Task - https://github.com/sindresorhus/grunt-eslint
 // ----------------------------------------------------------------------------
 module.exports = {
+
 	options: {
-		// Import our ESLint config options.
 		configFile: 'grunt/config/eslintrc.json',
-		// Output the results to file.
 		outputFile: '<%= siteInfo.reports_path %>/eslint.md',
-		// Ignore warnings and report only errors.
 		quiet: true
 	},
 	// Lint our Javascript.

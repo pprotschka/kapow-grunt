@@ -1,8 +1,8 @@
 // PostCSS Task - https://github.com/nDmitry/grunt-postcss
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Run our CSS through pixrem and
-	// autoprefixer.
+	// Run our CSS through various tools for
+	// enhanced browser support & fallbacks.
 	// -------------------------------------
 	options: {
 		map: true,

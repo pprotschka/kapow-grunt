@@ -1,6 +1,9 @@
 // Sass Lint Task - https://github.com/sasstools/grunt-sass-lint
 // ----------------------------------------------------------------------------
 module.exports = {
+
+	// Lint SCSS files.
+	// -------------------------------------
 	options: {
 		configFile: 'config/.sasslint.yml',
 		formatter: 'stylish',

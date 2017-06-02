@@ -1,6 +1,7 @@
 // PHPdoc Task - https://github.com/chrisklaussner/grunt-phpdoc
 // ----------------------------------------------------------------------------
 module.exports = {
+
 	// Generate theme and plugin
 	// documentation.
 	// -------------------------------------

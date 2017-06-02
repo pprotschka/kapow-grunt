@@ -1,9 +1,9 @@
 // Sass Task - https://github.com/sindresorhus/grunt-sass
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Generate CSS from our Sass files.
+	// Generate CSS from our SCSS files.
 	// -------------------------------------
-	sass: {
+	scss: {
 		options: {
 			includePaths: [
 				'bower_components/',

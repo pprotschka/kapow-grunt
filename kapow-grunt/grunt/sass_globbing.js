@@ -2,6 +2,11 @@
 // ----------------------------------------------------------------------------
 module.exports = {
 
+	// Glob files from multiple directories
+	// in our SCSS codebase, which reduces
+	// the need to manually add new partials
+	// to the main `style.scss` file.
+	// -------------------------------------
 	scss: {
 		files: {
 			'<%= siteInfo.assets_path %>/<%= siteInfo.scss_dir %>/glob/_baseMap.scss':

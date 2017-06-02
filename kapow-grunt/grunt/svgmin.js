@@ -1,6 +1,9 @@
 // SVG Min Task - https://github.com/sindresorhus/grunt-svgmin
 // ----------------------------------------------------------------------------
 module.exports = {
+
+    // Minifiy SVG files.
+    // -------------------------------------
     options: {
         plugins: [
         {

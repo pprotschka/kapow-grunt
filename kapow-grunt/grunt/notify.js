@@ -1,6 +1,7 @@
 // Notify Task - https://github.com/dylang/grunt-notify
 // ----------------------------------------------------------------------------
 module.exports = {
+
 	// Notify once the project is rebuilt.
 	// -------------------------------------
 	build: {

@@ -6,6 +6,8 @@ module.exports = {
 		sourceMap: false,
 		presets: ['stage-0','es2015', 'es2016', 'es2017']
 	},
+	// Transpile the Javascript.
+	//
 	// NOTE: We're overwriting the .tmp.js
 	// files with the transpiled versions.
 	// -------------------------------------

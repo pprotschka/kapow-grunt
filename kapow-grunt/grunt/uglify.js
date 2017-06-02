@@ -1,6 +1,7 @@
 // Uglify Task - https://github.com/gruntjs/grunt-contrib-uglify
 // ----------------------------------------------------------------------------
 module.exports = {
+
 	// Uglify all of our JS assets.
 	// -------------------------------------
 	options: {
@@ -14,35 +15,35 @@ module.exports = {
 		// -------------------------------------
 		sourceMap: true
 	},
-	// Header JS.
+	// Uglify header JS.
 	// -------------------------------------
 	header: {
 		files: {
 			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header.min.js': [ '<%= concat.header.dest %>' ]
 		}
 	},
-	// Header JS for IE.
+	// Uglify header JS for IE.
 	// -------------------------------------
 	header_ie: {
 		files: {
 			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/header_ie.min.js': [ '<%= concat.header_ie.dest %>' ]
 		}
 	},
-	// Footer JS.
+	// Uglify footer JS.
 	// -------------------------------------
 	footer: {
 		files: {
 			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/footer.min.js': [ '<%= concat.footer.dest %>' ]
 		}
 	},
-	// Customizer JS.
+	// Uglify customizer JS.
  	// -------------------------------------
 	customizer: {
 		files: {
 			'<%= wpInfo.wp_content %>/<%= wpInfo.themes_dir %>/<%= wpInfo.theme_name %>/<%= wpInfo.assets_dir %>/<%= wpInfo.js_dir %>/customizer.min.js': [ '<%= siteInfo.assets_path %>/<%= siteInfo.js_dir %>/customizer.js' ]
 		}
 	},
-	// Admin JS.
+	// Uglify admin JS.
 	// -------------------------------------
 	admin: {
 		files: {

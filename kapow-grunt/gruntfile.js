@@ -130,7 +130,7 @@ module.exports = function(grunt) {
 				themes_dir: 'themes',
 
 				// -------------------------------------
-				// WordPress theme directory name.
+				// WordPress theme directory.
 				// -------------------------------------
 				theme_name: 'my-project',
 
@@ -170,6 +170,8 @@ module.exports = function(grunt) {
 			// folders/files that require linting
 			// -------------------------------------
 			wpPlugins: [
+				'<%= wpInfo.wp_content %>/plugins/kapow-core/**/*.php',
+				'<%= wpInfo.wp_content %>/plugins/project-core/**/*.php',
 				// '<%= wpInfo.wp_content %>/plugins/my-plugin/**/*.php',
 			],
 

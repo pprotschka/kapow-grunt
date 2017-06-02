@@ -1,6 +1,10 @@
 // Grunticon Task - https://github.com/filamentgroup/grunticon
 // ----------------------------------------------------------------------------
 module.exports = {
+
+	// Automatically process icon SVG & PNG
+	// files for use in Sass codebase.
+	// -------------------------------------
 	icons: {
 		files: [{
 			expand: true,
