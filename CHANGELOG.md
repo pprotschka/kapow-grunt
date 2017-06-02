@@ -1,367 +1,224 @@
-# Changelog 
-
-2016-08-17 - **Updated changelog** (d8c4545)
-
-2016-08-17 - **Updated changelog** (cf67ab4)
-
-2016-08-16 - **Updated changelog** (0f36d0e)
-
-2016-08-16 - **Tweaked Modernizr include filename** (5ab88e1)
-
-2016-08-16 - **Fixed incorrect paths for outputting unminfied JS assets in the theme** (7873887)
-
-2016-08-16 - **Bug fixes** (c4bdd6a)
-
-2016-08-16 - **Bug - missing comma** (ee5a3d5)
-
-2016-08-16 - **Updated changelog** (13c1f70)
-
-2016-08-16 - **Added Grunticon config** (6afe5a5)
-
-2016-08-16 - **Added some useful tests to Modernizr config** (506700e)
-
-2016-08-16 - **Unminified CSS now output to the theme** (e4928d9)
-
-2016-08-16 - **Concat task now outputs unminified JS assets to the theme** (72ad3a6)
-
-2016-08-16 - **Updated README** (845e069)
-
-2016-08-16 - **Added CHANGELOG** (c9c0a5e)
-
-2016-05-17 - **Comment tweak** (83da769)
-
-2016-05-17 - **Merge branch 'master' of https://github.com/mkdo/kapow-grunt** (fd0a736)
-
-2016-05-17 - **Documentation updates** (7769875)
-
-2016-05-17 - **Update README.md** (584b710)
-
-2016-05-17 - **Another package.json bump** (de39e31)
-
-2016-05-17 - **Bumped versions in package.json** (371ebdf)
-
-2016-04-22 - **Replaced grunt-scss-lint with grunt-sass-lint. Tested and working perfectly.** (4f584b7)
-
-2016-04-22 - **Slight refactor to Grunt Sync: assets/fonts now automatically syncs with theme/assets/fonts** (fc7c623)
-
-2016-04-07 - **Updates grunt, grunt-parker and autoprefixer versions. Grunt Parker now silences console output if options.file is set. Winner.** (3935e7b)
-
-2016-04-02 - **Removed svg2png** (93b89de)
-
-2016-04-02 - **Comments update** (24075f8)
-
-2016-04-02 - **Tidied up formatting** (9b6e8fa)
-
-2016-04-02 - **Removed SVG from the list of files to process** (7e2cf7a)
-
-2016-04-02 - **Comments update** (b7767d4)
-
-2016-04-02 - **Enforced alphabetical order** (7fe4601)
-
-2016-03-31 - **Excluded Modernizr's hidden attributes test to prevent the .hidden class being added to the <html> element** (d42355d)
-
-2016-03-27 - **Corrected error in comment** (e25940c)
-
-2016-03-27 - **Added missing target** (39e1eab)
-
-2016-03-27 - **Added svgmin config** (e6bb0f1)
-
-2016-03-27 - **Added es5-shim to the concat object for the header_ie JS** (290d918)
-
-2016-03-27 - **Added picturefill to Bower manifest** (61fc597)
-
-2016-03-27 - **Added SVG Min task** (5783927)
-
-2016-03-26 - **Fixed bug with duplicate sprite PNGs** (6f94de7)
-
-2016-03-26 - **Converted sync task to support multiple objects containing src and dest paths** (4dd6e59)
-
-2016-03-26 - **Corrected error - docs should be document** (11358d7)
-
-2016-03-26 - **Updated Modernizr config to bring in line with newer version** (3e53240)
-
-2016-03-26 - **Fixed path to modernizr in bower.** (a578f75)
-
-2016-03-26 - **Various minor tweaks** (de54ba6)
-
-2016-03-26 - **Tweaked gruntfile and added some WP coding standards friendly JSHint config options to jshintrc** (f93f92b)
-
-2016-03-25 - **Version bumps** (1280f58)
-
-2016-03-07 - **Updated grunt-modernizr version** (960ab62)
-
-2015-12-16 - **Fixed the bug fix** (a693d05)
-
-2015-12-16 - **Bug fix with dest path** (a9b6eb0)
-
-2015-11-15 - **Added customizer uglification** (76eb920)
-
-2015-11-13 - **Update bower.json** (b0a64af)
-
-2015-11-11 - **Update README.md** (ec44438)
-
-2015-11-11 - **Update README.md** (37f027a)
-
-2015-11-11 - **Removed some deps** (fd9575a)
-
-2015-11-10 - **Comment tweak** (551e627)
-
-2015-11-10 - **Corrected typo** (9c24c74)
-
-2015-11-10 - **Fix** (10bffee)
-
-2015-11-10 - **Added selector4096** (6b29555)
-
-2015-11-10 - **Tweaked text** (5f3558a)
-
-2015-11-10 - **Updates to gruntfile comments** (a1b9ab9)
-
-2015-11-10 - **Upgraded grunt dependencies** (cf85a73)
-
-2015-11-10 - **Removed frontend-md meta from package.json** (8b9ba23)
-
-2015-10-26 - **Corrected variable name** (8d209d4)
-
-2015-10-25 - **Commented out sync task - needs to be optional** (4dc932b)
-
-2015-10-23 - **Added /lib/ to assets destination for folders synced from bower** (020e890)
-
-2015-10-23 - **Merge branch 'master' of https://github.com/mkdo/kapow-grunt** (4ce8891)
-
-2015-10-23 - **Introduced bower asset syncing - requires new /assets/ target in theme folder** (1737367)
-
-2015-10-23 - **Rename maxfilesize.js to maxFilesize.js** (482ebb0)
-
-2015-10-23 - **Tweaked grunt config to prevent maxFilesize errrs** (ba404f3)
-
-2015-10-23 - **Introduced grunt-max-filesize** (34fc12e)
-
-2015-10-23 - **Update README.md** (50c76cb)
-
-2015-10-23 - **Removed responsive images and converted all files to tabs rather than spaces** (9bcc977)
-
-2015-10-19 - **Changed devFile to match bower packages changes** (a4af44a)
-
-2015-09-23 - **Added progressive option** (2773572)
-
-2015-09-21 - **Removed respimages from JPG task** (e048a9d)
-
-2015-09-21 - **Uncommented imagemin, previously commented out in error** (0466d6b)
-
-2015-09-18 - **Updated NPM manifest** (3f89923)
-
-2015-09-18 - **Merge branch 'master' of https://github.com/mkdo/kapow-grunt** (e9404a3)
-
-2015-09-18 - **Comment tweak** (575fae8)
-
-2015-09-18 - **Documentation folder path** (d252464)
-
-2015-09-18 - **Renamed documentation alias** (e3a7dc6)
-
-2015-09-18 - **Update README.md** (faa2d39)
-
-2015-09-18 - **Added missing modernizr reference to concatHead, added underscore to concatFoot** (57a9946)
-
-2015-09-18 - **Altered order** (55a87a3)
-
-2015-09-18 - **Update README.md** (349331c)
-
-2015-09-18 - **Removed force parameter** (2150865)
-
-2015-09-18 - **Resolved phpdoc issue** (2697cfc)
-
-2015-09-17 - **Added sourceMapRoot option** (3b4bded)
-
-2015-09-17 - **Update sass.js** (1441483)
-
-2015-09-17 - **Added sourcemap copying tasks** (71de075)
-
-2015-09-17 - **Added sourcemap copying tasks** (63bed5c)
-
-2015-09-17 - **Added sourcemap copying tasks** (697080a)
-
-2015-09-17 - **Removed sourcemap options** (db20423)
-
-2015-09-17 - **Changed main sass file name** (53343e5)
-
-2015-09-17 - **Altered sourceMap options** (ebe646a)
-
-2015-09-17 - **Update README.md** (d17d725)
-
-2015-09-17 - **Update README.md** (9f6de0f)
-
-2015-09-17 - **Added grunt-parker to manifest** (a69353d)
-
-2015-09-17 - **Added analyse alias** (fbd4766)
-
-2015-09-17 - **Added Parker support** (118adda)
-
-2015-09-17 - **Replaced htdocs with build** (5412ae0)
-
-2015-09-17 - **Update README.md** (0b55f47)
-
-2015-09-17 - **Added navigation JS partial** (bf95f3a)
-
-2015-09-16 - **Corrected path error** (64d9bd8)
-
-2015-09-16 - **Added fix for Modernizr 404 issues** (8397ff9)
-
-2015-09-16 - **Update README.md** (ec0d22e)
-
-2015-09-16 - **Update README.md** (f804a56)
-
-2015-09-16 - **Changed repo structure.** (cd7c9d9)
-
-2015-09-07 - **Turned off inclusion of shivs** (caab756)
-
-2015-09-07 - **Added grunt sync** (6134ab9)
-
-2015-09-07 - **Changed processor order** (0b6a7cd)
-
-2015-09-07 - **Create bower.json** (d196bce)
-
-2015-09-07 - **Switched to autoprefixer from autoprefixer-core** (9399a22)
-
-2015-09-07 - **Updated deps** (481c750)
-
-2015-09-07 - **Replaced aggressive merging with compat mode** (0f468d3)
-
-2015-09-07 - **Disabled agressive merging** (a130903)
-
-2015-09-07 - **Added pixrem support** (24c99cf)
-
-2015-08-28 - **Update README.md** (3aa22e6)
-
-2015-08-28 - **Update README.md** (2e1df09)
-
-2015-08-28 - **Update README.md** (0ddd9db)
-
-2015-08-28 - **Update README.md** (5121ece)
-
-2015-08-28 - **Update README.md** (3d7259f)
-
-2015-08-28 - **Update README.md** (4f811ff)
-
-2015-08-28 - **Update README.md** (96f0646)
-
-2015-08-28 - **Update README.md** (4c72bf6)
-
-2015-08-28 - **Update README.md** (d5c963b)
-
-2015-08-28 - **Updated inline documentation** (6f29a68)
-
-2015-08-27 - **Updated NPM manifest** (51ad8a1)
-
-2015-08-27 - **Correcting minor syntax errors causing build to fail** (f27c61c)
-
-2015-08-27 - **Update README.md** (4958b31)
-
-2015-08-27 - **Update watch.js** (49b6205)
-
-2015-08-27 - **Update README.md** (49e1960)
-
-2015-08-26 - **Added support for editor and admin scss fils** (0d34303)
-
-2015-08-26 - **Silenced SCSS Lint** (abe4926)
-
-2015-08-26 - **Various updates and housekeeping/reformatting** (ee20894)
-
-2015-08-26 - **A little formatting** (3df7c32)
-
-2015-08-11 - **Update CONTRIBUTING.md** (014f87b)
-
-2015-08-11 - **Create CONTRIBUTING.md** (8ced39b)
-
-2015-08-11 - **Update package.json** (8453512)
-
-2015-08-10 - **Added missing commas** (b76a6ca)
-
-2015-08-10 - **Added timestamp to sprite** (ca4069d)
-
-2015-08-10 - **Added support for the IE only JS file** (d18ec93)
-
-2015-08-10 - **Housekeeping, turned JS sourcemaps on, added second header JS file for legacy IE** (e51b5e3)
-
-2015-08-10 - **Upgraded deps** (32d400e)
-
-2015-07-09 - **Added path to theme image folder so sprite path doesn't break** (48d16b2)
-
-2015-06-15 - **Update clean.js** (fb24da6)
-
-2015-06-15 - **Update concat.js** (09c501e)
-
-2015-06-15 - **Update clean.js** (fd02a6e)
-
-2015-06-11 - **Update sprite.js** (41c5940)
-
-2015-06-08 - **Update jshint.js** (ba6b6b6)
-
-2015-06-08 - **Update package.json** (94e4293)
-
-2015-06-04 - **Update package.json** (5b7d9e4)
-
-2015-06-04 - **Update gruntfile.js** (97c5665)
-
-2015-06-03 - **Update package.json** (34e752d)
-
-2015-06-03 - **Update README.md** (ba2ae5f)
-
-2015-06-03 - **Merge branch 'master' of github.com:davetgreen/kapow-grunt** (796d4d8)
-
-2015-06-03 - **Changed default documentation path to avoid confusion with htdocs** (7f0a83f)
-
-2015-06-03 - **Update README.md** (02f53bd)
-
-2015-06-03 - **Update README.md** (721b946)
-
-2015-06-03 - **Update README.md** (86b369f)
-
-2015-06-03 - **Update README.md** (5eb4ff7)
-
-2015-06-03 - **Turned on source mapping for minified CSS.** (e549670)
-
-2015-06-03 - **Update README.md** (cad16f9)
-
-2015-06-03 - **Update README.md** (d324180)
-
-2015-06-03 - **Update README.md** (572c9fe)
-
-2015-06-03 - **Made several tasks more uniform in the way they handle src and dest.** (4eb8a3a)
-
-2015-06-03 - **Minor correction.** (79b14e6)
-
-2015-06-03 - **Derp - missing comma.** (6f9bbcd)
-
-2015-06-03 - **Added sass/css file name property.** (4d88e42)
-
-2015-06-02 - **Updated watch task to reflect jshint changes.** (1f7696c)
-
-2015-06-02 - **Removed second jshint run and moved linting to the start of the default build.** (e0d99bd)
-
-2015-06-02 - **Tweak to spritesmith in watch task.** (d2f8ace)
-
-2015-06-02 - **Testing, commenting, features etc.** (9120780)
-
-2015-06-01 - **Started testing/debugging initial task configurations.** (8937cb8)
-
-2015-06-01 - **Added iniital aliases set-up.** (a28de62)
-
-2015-06-01 - **Corrected path error.** (1556967)
-
-2015-06-01 - **Added spritegen** (ca1fa86)
-
-2015-06-01 - **Updated package.** (42658c2)
-
-2015-06-01 - **Added Gruntfile.** (bb2ceb3)
-
-2015-06-01 - **Initial task creation - pending testing.** (1c4fa74)
-
-2015-05-30 - **Started adding tasks.** (e6c0147)
-
-2015-05-29 - **Create package.json** (79a3096)
-
-2015-05-29 - **Update README.md** (338863e)
-
-2015-05-25 - **Update README.md** (6e54edd)
-
-2015-05-24 - **Initial commit** (a77b75d)
+## Change Log
+
+### v2.0.0 02/06/2017
+- [5e3dbfe](https://github.com/mkdo/kapow-grunt/commit/5e3dbfe247e17086e10d9cddab731ce9ff39c979) Update README, completes inline and repository docs. Closes #15 (@davetgreen)
+- [16ecfab](https://github.com/mkdo/kapow-grunt/commit/16ecfaba2730066164625a61eb92fe0d21d973e2) Inline file docs updated, minor tweaks. (@davetgreen)
+- [35af2c3](https://github.com/mkdo/kapow-grunt/commit/35af2c3311e688e6ce300c37dca90a9e132cfd1b) Changes to resolve several linting issues. (@davetgreen)
+- [b94f033](https://github.com/mkdo/kapow-grunt/commit/b94f033250f5c5638d2c8e5b9ed9407854bf0bc3) Integrated Babel for es2015/16/17 transpiling. Closes #27 (@davetgreen)
+- [9d8d117](https://github.com/mkdo/kapow-grunt/commit/9d8d11776c1885a727d83cbf1c7e8896937fcb2e) Replaced JSHint with ESLint. Closes #12 (@davetgreen)
+- [1cb6f31](https://github.com/mkdo/kapow-grunt/commit/1cb6f31ed08799a4012edcca4f25c23e308ec944) Task adjustments to align with new Kapow! setup config (@davetgreen)
+- [56e2607](https://github.com/mkdo/kapow-grunt/commit/56e260745ba5e662b45026b2d4042335bc5f186d) Removed comment. (@davetgreen)
+- [c2d2704](https://github.com/mkdo/kapow-grunt/commit/c2d2704ee4b459a7d91dbbf74c59232736917350) Typo (@davetgreen)
+- [26b6fc0](https://github.com/mkdo/kapow-grunt/commit/26b6fc0c89e6902f6361b365ce48aa90c9affa2a) Removed testing code. (@davetgreen)
+- [54b1dd3](https://github.com/mkdo/kapow-grunt/commit/54b1dd367466ce7302dbdf435a5ad739a0940de0) Resolved source mapping issue! :party-gandalf Closes #3 (@davetgreen)
+- [d6708bf](https://github.com/mkdo/kapow-grunt/commit/d6708bfcac17a3b5a2e3b254049a5ca84c42a1cb) Fixed pixrem bug with media queries by adding atrules parameter to config. Closes #24 (@davetgreen)
+- [d1f7532](https://github.com/mkdo/kapow-grunt/commit/d1f753264ecfe4d39b2c66dbc488e521623f929e) May as well clean up globbing files as well. (@davetgreen)
+- [f9b446d](https://github.com/mkdo/kapow-grunt/commit/f9b446d42612b879cd265f29ee8eb9e6edb34f31) Sprites partial is now removed in the clean task to reduce the likelihood of merge conflicts. Closes #25 (@davetgreen)
+- [0d0a1bd](https://github.com/mkdo/kapow-grunt/commit/0d0a1bd5d46c233b8e207ecb71029e7ae9b7683b) Corrected sass-globbing.js to sass_globbing.js (@davetgreen)
+- [ebfadd9](https://github.com/mkdo/kapow-grunt/commit/ebfadd9c271e9c57926bb6119862d197ef57b36d) Added grunt-sass-globbing 1.5.1 to NPM deps. (@davetgreen)
+- [0d585c4](https://github.com/mkdo/kapow-grunt/commit/0d585c4be629ae4b6bf55b4375062bc79ff05e3c) Ignored glob folder in relevant Grunt partials that check the SCSS codebase. (@davetgreen)
+- [c66c93c](https://github.com/mkdo/kapow-grunt/commit/c66c93cad1498da9e3c611b7f7fc6b7e343267ce) grunt-sass-globbing installed and configured. Closes #30 (@davetgreen)
+- [f1ab202](https://github.com/mkdo/kapow-grunt/commit/f1ab2021fca043d8ac7637d9a7dcd7d3165a68df) Tweaks to concat. (@davetgreen)
+- [25b31f2](https://github.com/mkdo/kapow-grunt/commit/25b31f2b630bfbaacd1529f2966c63923406dc77) Variable bug fix (@davetgreen)
+- [e9e6552](https://github.com/mkdo/kapow-grunt/commit/e9e6552852fda47b71a7fe47a638cec7b583955a) Fixed includePaths bug (@davetgreen)
+- [6a5681f](https://github.com/mkdo/kapow-grunt/commit/6a5681f2dcae4c246d83a0d2f8ab39af3b8a9eea) Modernizr bower path fix. (@davetgreen)
+- [eae739d](https://github.com/mkdo/kapow-grunt/commit/eae739d3169f7ff4639fa699ab81ee2d8954d2c6) Bug fixes. (@davetgreen)
+- [00974db](https://github.com/mkdo/kapow-grunt/commit/00974db690e3781dcb0ba7c52f3d0077a3e0d193) No need to manually register JS libraries or partials if filename contains _f.js/_h.js suffix. Closes #16 (@davetgreen)
+- [21b173b](https://github.com/mkdo/kapow-grunt/commit/21b173b689237aa1fd720d8a1c345dd08f5eece3) Added includePath items to prevent ugly paths to bower_components in Kapow! Sass. Closes #29 (@davetgreen)
+- [8b5133f](https://github.com/mkdo/kapow-grunt/commit/8b5133fe6a930b48aa9c37a48e96891c1a5623dc) Unminified customizer and admin area JS files are now copied across to the theme. Closes #11 (@davetgreen)
+- [68cfdcb](https://github.com/mkdo/kapow-grunt/commit/68cfdcb2251426523c9a835883754cbf432310c5) Replaced a number of strings with new variables. Closes #23 (@davetgreen)
+- [7245c27](https://github.com/mkdo/kapow-grunt/commit/7245c272a011204b13dc9fc05894347c2c7d4f34) Updated modernizr tests. Closes #22 (@davetgreen)
+- [28f3bdc](https://github.com/mkdo/kapow-grunt/commit/28f3bdc4304dc94524b125d7853e3350397ed04c) Several jshintrc tweaks. Closes #19 (@davetgreen)
+- [96bb560](https://github.com/mkdo/kapow-grunt/commit/96bb560b94c2a3f90ef22985810156cad129dfed) Reduced tasks in default stack. Closes #20 (@davetgreen)
+- [ffbaf83](https://github.com/mkdo/kapow-grunt/commit/ffbaf83c606af6b59266fa13edddc63fbbd982c0) Bower and NPM dependencies updated. Closes #18 (@davetgreen)
+- [e88f3da](https://github.com/mkdo/kapow-grunt/commit/e88f3daf98482aab89c756700a304fdbea2bc1da) Updated package.json (@davetgreen)
+- [3e94467](https://github.com/mkdo/kapow-grunt/commit/3e94467898eadd2ac3419232e2005eecd0de3dd8) Create LICENSE (@davetgreen)
+- [f584599](https://github.com/mkdo/kapow-grunt/commit/f584599b0fe8fd52a1bf56c787d5e73270faa49f) Create PULL_REQUEST_TEMPLATE.md (@davetgreen)
+- [c1aa7fc](https://github.com/mkdo/kapow-grunt/commit/c1aa7fce33a1bbfd55035e2318eb402999de0908) Create ISSUE_TEMPLATE.md (@davetgreen)
+- [1009d9e](https://github.com/mkdo/kapow-grunt/commit/1009d9e394a53598e0aff7d3ecbf3d7b2f40c2d7) Update and rename CONTRIBUTING.md to .github/CONTRIBUTING.md (@davetgreen)
+- [#9](https://github.com/mkdo/kapow-grunt/pull/9) Merge pull request #9 from mkdo/assets-fonts-sync-patch (@mkdo)
+- [a0eae8a](https://github.com/mkdo/kapow-grunt/commit/a0eae8aae8501ac5558b5cf5a39280cd64dcd14b) fix fonts/assets path (@nervewax)
+- [e086ea9](https://github.com/mkdo/kapow-grunt/commit/e086ea93bef2266866f0b68840dc095408f41e49) Updated changelog (@davetgreen)
+- [d8c4545](https://github.com/mkdo/kapow-grunt/commit/d8c454519f0dd49635446f4a2915d1285eba3b6b) Updated changelog (@davetgreen)
+- [cf67ab4](https://github.com/mkdo/kapow-grunt/commit/cf67ab4bc344c965d2f1c356a628a713287242bf) Updated changelog (@davetgreen)
+- [0f36d0e](https://github.com/mkdo/kapow-grunt/commit/0f36d0ec1ea27d888b88e2fab50adda20b6dd5d6) Updated changelog (@davetgreen)
+- [5ab88e1](https://github.com/mkdo/kapow-grunt/commit/5ab88e1946ebd5cd78353b6b7d2a25e4b277b2d8) Tweaked Modernizr include filename (@davetgreen)
+- [7873887](https://github.com/mkdo/kapow-grunt/commit/7873887b3fbb430e1c46c2df0a97b47fa51579cd) Fixed incorrect paths for outputting unminfied JS assets in the theme (@davetgreen)
+- [c4bdd6a](https://github.com/mkdo/kapow-grunt/commit/c4bdd6a41932b674305b9e3b9eef3b64f8d68490) Bug fixes (@davetgreen)
+- [ee5a3d5](https://github.com/mkdo/kapow-grunt/commit/ee5a3d5460e6d7c0aba478131868d8364721f85d) Bug - missing comma (@davetgreen)
+- [13c1f70](https://github.com/mkdo/kapow-grunt/commit/13c1f70da0ca1217635bb99f04d6ad3c04952bae) Updated changelog (@davetgreen)
+- [6afe5a5](https://github.com/mkdo/kapow-grunt/commit/6afe5a5fa61e249fc60d7875c1a1ea96a028ebf1) Added Grunticon config (@davetgreen)
+- [506700e](https://github.com/mkdo/kapow-grunt/commit/506700e216f8216d57177bca57aa949f906dce40) Added some useful tests to Modernizr config (@davetgreen)
+- [e4928d9](https://github.com/mkdo/kapow-grunt/commit/e4928d9b245a1307a17f89b418413a9b9958c886) Unminified CSS now output to the theme (@davetgreen)
+- [72ad3a6](https://github.com/mkdo/kapow-grunt/commit/72ad3a6b80cb63c90c70c676630ab0db94719f95) Concat task now outputs unminified JS assets to the theme (@davetgreen)
+- [845e069](https://github.com/mkdo/kapow-grunt/commit/845e069439bd5ae12c0113273bf5af11ee21bf66) Updated README (@davetgreen)
+- [c9c0a5e](https://github.com/mkdo/kapow-grunt/commit/c9c0a5e625448119b139ff8ff5a98a0af42d2f5d) Added CHANGELOG (@davetgreen)
+- [83da769](https://github.com/mkdo/kapow-grunt/commit/83da7699ca4604e8ba5739792c5668a33e96f318) Comment tweak (@davetgreen)
+- [fd0a736](https://github.com/mkdo/kapow-grunt/commit/fd0a736ad098207f796bec38f70738cecd21000c) Merge branch 'master' of https://github.com/mkdo/kapow-grunt (@davetgreen)
+- [7769875](https://github.com/mkdo/kapow-grunt/commit/776987560155d7c41cfd9e8a76f30317e0407980) Documentation updates (@davetgreen)
+- [584b710](https://github.com/mkdo/kapow-grunt/commit/584b7101985e55d80340237e522705bb425cb067) Update README.md (@davetgreen)
+- [de39e31](https://github.com/mkdo/kapow-grunt/commit/de39e314e7d3723e66ad71a28a12865b7f000afa) Another package.json bump (@davetgreen)
+- [371ebdf](https://github.com/mkdo/kapow-grunt/commit/371ebdf8b86ea06fa8f266e5438e144e375d5a09) Bumped versions in package.json (@davetgreen)
+- [4f584b7](https://github.com/mkdo/kapow-grunt/commit/4f584b78e431ff6d286c6d653568906dc1e44bd9) Replaced grunt-scss-lint with grunt-sass-lint. Tested and working perfectly. (@davetgreen)
+- [fc7c623](https://github.com/mkdo/kapow-grunt/commit/fc7c6230da041994d535624d3c30df9240727f45) Slight refactor to Grunt Sync: assets/fonts now automatically syncs with theme/assets/fonts (@davetgreen)
+- [3935e7b](https://github.com/mkdo/kapow-grunt/commit/3935e7b67f4013032e397c03c5183cb9b3a62324) Updates grunt, grunt-parker and autoprefixer versions. Grunt Parker now silences console output if options.file is set. Winner. (@davetgreen)
+- [93b89de](https://github.com/mkdo/kapow-grunt/commit/93b89dedd004f3b8e427d2aff08190627c59fde7) Removed svg2png (@davetgreen)
+- [24075f8](https://github.com/mkdo/kapow-grunt/commit/24075f8c71c6dd18c1c92fa6ebe08608bf91410a) Comments update (@davetgreen)
+- [9b6e8fa](https://github.com/mkdo/kapow-grunt/commit/9b6e8fa2714d477523e5b5708e60b8428094a017) Tidied up formatting (@davetgreen)
+- [7e2cf7a](https://github.com/mkdo/kapow-grunt/commit/7e2cf7ab0fe252afe68e2559083132cd1d538d47) Removed SVG from the list of files to process (@davetgreen)
+- [b7767d4](https://github.com/mkdo/kapow-grunt/commit/b7767d411efa664dcb4b336fab85bb2147bcce83) Comments update (@davetgreen)
+- [7fe4601](https://github.com/mkdo/kapow-grunt/commit/7fe4601d97e5e896e5def1ee10308879845d19c3) Enforced alphabetical order (@davetgreen)
+- [d42355d](https://github.com/mkdo/kapow-grunt/commit/d42355d58c17d00a4cc87f56245ff990c0cc408d) Excluded Modernizr's hidden attributes test to prevent the .hidden class being added to the <html> element (@davetgreen)
+- [e25940c](https://github.com/mkdo/kapow-grunt/commit/e25940c657f0327eeb741f9a28a33a7d50e8d7e6) Corrected error in comment (@davetgreen)
+- [39e1eab](https://github.com/mkdo/kapow-grunt/commit/39e1eab3c993d652833e819b9c9f667436793545) Added missing target (@davetgreen)
+- [e6bb0f1](https://github.com/mkdo/kapow-grunt/commit/e6bb0f15d1cbb49e17ccf3c2deb883175008b270) Added svgmin config (@davetgreen)
+- [290d918](https://github.com/mkdo/kapow-grunt/commit/290d91832c5b316c6e8173bb4cdc91d83b75542e) Added es5-shim to the concat object for the header_ie JS (@davetgreen)
+- [61fc597](https://github.com/mkdo/kapow-grunt/commit/61fc597606316e782a7777bf11d5078fe03f2a9c) Added picturefill to Bower manifest (@davetgreen)
+- [5783927](https://github.com/mkdo/kapow-grunt/commit/5783927f94fc3afab02b016e25c26e911912fe23) Added SVG Min task (@davetgreen)
+- [6f94de7](https://github.com/mkdo/kapow-grunt/commit/6f94de70e50754100679a2e5024f966cfd8feb79) Fixed bug with duplicate sprite PNGs (@davetgreen)
+- [4dd6e59](https://github.com/mkdo/kapow-grunt/commit/4dd6e59400ac994aa0a03190e7a269580b741791) Converted sync task to support multiple objects containing src and dest paths (@davetgreen)
+- [11358d7](https://github.com/mkdo/kapow-grunt/commit/11358d7b8f44f6cb9cb344ee900ce40b0980e842) Corrected error - docs should be document (@davetgreen)
+- [3e53240](https://github.com/mkdo/kapow-grunt/commit/3e532409a9b9e766f9e42f812924a94c602dbd71) Updated Modernizr config to bring in line with newer version (@davetgreen)
+- [a578f75](https://github.com/mkdo/kapow-grunt/commit/a578f7596e06dbb264adf9fbb0533261e47a069e) Fixed path to modernizr in bower. (@davetgreen)
+- [de54ba6](https://github.com/mkdo/kapow-grunt/commit/de54ba615dc6a23ca554cb3718ee23a8a230cd2a) Various minor tweaks (@davetgreen)
+- [f93f92b](https://github.com/mkdo/kapow-grunt/commit/f93f92b6b96c2da1584f2d2847efbd7c8629fde1) Tweaked gruntfile and added some WP coding standards friendly JSHint config options to jshintrc (@davetgreen)
+- [1280f58](https://github.com/mkdo/kapow-grunt/commit/1280f5875641323a16b9a29e043635c4d1181157) Version bumps (@davetgreen)
+- [960ab62](https://github.com/mkdo/kapow-grunt/commit/960ab622282c587bf6240e9d03a5b5000d4e7556) Updated grunt-modernizr version (@davetgreen)
+- [a693d05](https://github.com/mkdo/kapow-grunt/commit/a693d053076a69df48d152018864931c3a945cfd) Fixed the bug fix (@davetgreen)
+- [a9b6eb0](https://github.com/mkdo/kapow-grunt/commit/a9b6eb0bec37c4aee00f1d279ce4c5b7d11be642) Bug fix with dest path (@davetgreen)
+- [76eb920](https://github.com/mkdo/kapow-grunt/commit/76eb920e7946daa8f732a40d9af0c7b767c8e60f) Added customizer uglification (@davetgreen)
+- [b0a64af](https://github.com/mkdo/kapow-grunt/commit/b0a64af645af194d0f9176ef63d27678bf5bd613) Update bower.json (@davetgreen)
+- [ec44438](https://github.com/mkdo/kapow-grunt/commit/ec44438ee7ed3e305d10f52bb920b06e75dd04f2) Update README.md (@davetgreen)
+- [37f027a](https://github.com/mkdo/kapow-grunt/commit/37f027ae69bb11b9f9bcb5d3671aca4f7734d44c) Update README.md (@davetgreen)
+- [fd9575a](https://github.com/mkdo/kapow-grunt/commit/fd9575afb922ea1a7a8a88c55eb884a7ea0f8b7d) Removed some deps (@davetgreen)
+- [551e627](https://github.com/mkdo/kapow-grunt/commit/551e627ed459bbea939eba6f92360ebb7ee64f65) Comment tweak (@davetgreen)
+- [9c24c74](https://github.com/mkdo/kapow-grunt/commit/9c24c745c383e391f34bb81f2e28f2492dd1e9d9) Corrected typo (@davetgreen)
+- [10bffee](https://github.com/mkdo/kapow-grunt/commit/10bffee20413fac23fe43c2e8849d6f019d0eacf) Fix (@davetgreen)
+- [6b29555](https://github.com/mkdo/kapow-grunt/commit/6b295554b27ed88b7f54d5b214a442969bae4290) Added selector4096 (@davetgreen)
+- [5f3558a](https://github.com/mkdo/kapow-grunt/commit/5f3558a3413199fe631c96adcaf272022759f59c) Tweaked text (@davetgreen)
+- [a1b9ab9](https://github.com/mkdo/kapow-grunt/commit/a1b9ab9cd5f3a857e40f2c0a4544850ac5ada854) Updates to gruntfile comments (@davetgreen)
+- [cf85a73](https://github.com/mkdo/kapow-grunt/commit/cf85a731345c9cc09480a01ad5a500a8ccbf7827) Upgraded grunt dependencies (@davetgreen)
+- [8b9ba23](https://github.com/mkdo/kapow-grunt/commit/8b9ba238909f5211bf0185aa72dc71d95a4f2e9f) Removed frontend-md meta from package.json (@davetgreen)
+- [8d209d4](https://github.com/mkdo/kapow-grunt/commit/8d209d46387b71fedee1937bb46022ab521009df) Corrected variable name (@davetgreen)
+- [4dc932b](https://github.com/mkdo/kapow-grunt/commit/4dc932b4d0d36678ef58f4a73a3513e6a618dcf0) Commented out sync task - needs to be optional (@davetgreen)
+- [020e890](https://github.com/mkdo/kapow-grunt/commit/020e890656c2f8ec61e5a1cee43e67df7eb0fcbe) Added /lib/ to assets destination for folders synced from bower (@davetgreen)
+- [4ce8891](https://github.com/mkdo/kapow-grunt/commit/4ce8891da0de9e5644b0e4435c2c91c1526266d7) Merge branch 'master' of https://github.com/mkdo/kapow-grunt (@davetgreen)
+- [1737367](https://github.com/mkdo/kapow-grunt/commit/173736715f74bd9b668e72c9c03b687de05facbf) Introduced bower asset syncing - requires new /assets/ target in theme folder (@davetgreen)
+- [482ebb0](https://github.com/mkdo/kapow-grunt/commit/482ebb011b040a3af03dc091a16622eee9774270) Rename maxfilesize.js to maxFilesize.js (@davetgreen)
+- [ba404f3](https://github.com/mkdo/kapow-grunt/commit/ba404f3d0c32595c9287ee72f6bb5237f250955e) Tweaked grunt config to prevent maxFilesize errrs (@davetgreen)
+- [34fc12e](https://github.com/mkdo/kapow-grunt/commit/34fc12e5c3e67e2771ed1fc249b9214af17046a9) Introduced grunt-max-filesize (@davetgreen)
+- [50c76cb](https://github.com/mkdo/kapow-grunt/commit/50c76cbf7fa53033139c195c3f93835c7f0d08ce) Update README.md (@davetgreen)
+- [9bcc977](https://github.com/mkdo/kapow-grunt/commit/9bcc977dbcf5d4cdb3f295972da85d3dbbbac40c) Removed responsive images and converted all files to tabs rather than spaces (@davetgreen)
+- [a4af44a](https://github.com/mkdo/kapow-grunt/commit/a4af44a035e1d946ed0ae9b79ad0278b5b2e45a7) Changed devFile to match bower packages changes (@davetgreen)
+- [2773572](https://github.com/mkdo/kapow-grunt/commit/277357260b2a566581bfaf912b52d639250f6956) Added progressive option (@davetgreen)
+- [e048a9d](https://github.com/mkdo/kapow-grunt/commit/e048a9da6e8fe3545db9c71d5189e82b85a72ec3) Removed respimages from JPG task (@davetgreen)
+- [0466d6b](https://github.com/mkdo/kapow-grunt/commit/0466d6b8164d7f53ef93076b1fe8848caad1023b) Uncommented imagemin, previously commented out in error (@davetgreen)
+- [3f89923](https://github.com/mkdo/kapow-grunt/commit/3f89923dc938788cd738d8ba03ddf5281ca7f75e) Updated NPM manifest (@davetgreen)
+- [e9404a3](https://github.com/mkdo/kapow-grunt/commit/e9404a38228707d9347e6489352ac2acc5f2a54b) Merge branch 'master' of https://github.com/mkdo/kapow-grunt (@davetgreen)
+- [575fae8](https://github.com/mkdo/kapow-grunt/commit/575fae8cff5ae53b154e052751f5dde635eba005) Comment tweak (@davetgreen)
+- [d252464](https://github.com/mkdo/kapow-grunt/commit/d252464df83442fe609332bf6f27e282aca169e4) Documentation folder path (@davetgreen)
+- [e3a7dc6](https://github.com/mkdo/kapow-grunt/commit/e3a7dc698eb3c010f22ae7ea25130ff8ef028481) Renamed documentation alias (@davetgreen)
+- [faa2d39](https://github.com/mkdo/kapow-grunt/commit/faa2d390a3a00bc681d26116b2ccd3f7baebf2e8) Update README.md (@davetgreen)
+- [57a9946](https://github.com/mkdo/kapow-grunt/commit/57a99463418d65f468d9f09bb17da31f01fe7133) Added missing modernizr reference to concatHead, added underscore to concatFoot (@davetgreen)
+- [55a87a3](https://github.com/mkdo/kapow-grunt/commit/55a87a3a391c68831a03be4d0449c5dfe7f872f7) Altered order (@davetgreen)
+- [349331c](https://github.com/mkdo/kapow-grunt/commit/349331c4756a98c0a1ac5221082b13a64778235e) Update README.md (@davetgreen)
+- [2150865](https://github.com/mkdo/kapow-grunt/commit/2150865ea1af5692b8413e8682efd79e267a718d) Removed force parameter (@davetgreen)
+- [2697cfc](https://github.com/mkdo/kapow-grunt/commit/2697cfcc50eb69dd1761a6197f73bff0a7483f04) Resolved phpdoc issue (@davetgreen)
+- [3b4bded](https://github.com/mkdo/kapow-grunt/commit/3b4bded880f521add294ee8df49878c9af02bc23) Added sourceMapRoot option (@davetgreen)
+- [1441483](https://github.com/mkdo/kapow-grunt/commit/1441483c25a4ba97c48c8cc7f93189c11650082a) Update sass.js (@davetgreen)
+- [71de075](https://github.com/mkdo/kapow-grunt/commit/71de0756c9e2e2319ad607feadcc04eb187d0430) Added sourcemap copying tasks (@davetgreen)
+- [63bed5c](https://github.com/mkdo/kapow-grunt/commit/63bed5cd5b91db45e903a7b571b381f11a9bdf75) Added sourcemap copying tasks (@davetgreen)
+- [697080a](https://github.com/mkdo/kapow-grunt/commit/697080a078fdc80fd8a3e2ca5bca02adfaf1e784) Added sourcemap copying tasks (@davetgreen)
+- [db20423](https://github.com/mkdo/kapow-grunt/commit/db20423e431cc8b4e9126b90643c26eba1750316) Removed sourcemap options (@davetgreen)
+- [53343e5](https://github.com/mkdo/kapow-grunt/commit/53343e53ac8dcd7c305785be5074cc9d9f6a845f) Changed main sass file name (@davetgreen)
+- [ebe646a](https://github.com/mkdo/kapow-grunt/commit/ebe646a9f3ff2d7d562525e16479952508904b60) Altered sourceMap options (@davetgreen)
+- [d17d725](https://github.com/mkdo/kapow-grunt/commit/d17d7258f5099af93330156511bc78f49f0449b1) Update README.md (@davetgreen)
+- [9f6de0f](https://github.com/mkdo/kapow-grunt/commit/9f6de0facc4df69f9e49b241816e55a019adc4d7) Update README.md (@davetgreen)
+- [a69353d](https://github.com/mkdo/kapow-grunt/commit/a69353de9b21f42614bef8684b1d32810e082c1f) Added grunt-parker to manifest (@davetgreen)
+- [fbd4766](https://github.com/mkdo/kapow-grunt/commit/fbd47663654b535b478097a7fcb9d0d3fc304f7b) Added analyse alias (@davetgreen)
+- [118adda](https://github.com/mkdo/kapow-grunt/commit/118adda0bfd373d30a23e566c96d74c90e523e55) Added Parker support (@davetgreen)
+- [5412ae0](https://github.com/mkdo/kapow-grunt/commit/5412ae04eae8c092d7ece516c0db4c93c3aeea73) Replaced htdocs with build (@davetgreen)
+- [0b55f47](https://github.com/mkdo/kapow-grunt/commit/0b55f4752a04f7b6bec98d0da99bd77e5d574e2f) Update README.md (@davetgreen)
+- [bf95f3a](https://github.com/mkdo/kapow-grunt/commit/bf95f3a3f0f98f21357282358e9a0c332e97f749) Added navigation JS partial (@davetgreen)
+- [64d9bd8](https://github.com/mkdo/kapow-grunt/commit/64d9bd8841a83d6bf861f618fd7818bea1f91e48) Corrected path error (@davetgreen)
+- [8397ff9](https://github.com/mkdo/kapow-grunt/commit/8397ff9b2e6fe1be56db3b0d4c861dbf1dcea0b2) Added fix for Modernizr 404 issues (@davetgreen)
+- [ec0d22e](https://github.com/mkdo/kapow-grunt/commit/ec0d22ea30a9561ced989d9d5fe7ee3adb3dac9f) Update README.md (@davetgreen)
+- [f804a56](https://github.com/mkdo/kapow-grunt/commit/f804a560a3590fc0163f59869e60e38d87e54865) Update README.md (@davetgreen)
+- [cd7c9d9](https://github.com/mkdo/kapow-grunt/commit/cd7c9d9fdcbbd88b079ff20ba568b31cda181d41) Changed repo structure. (@davetgreen)
+- [caab756](https://github.com/mkdo/kapow-grunt/commit/caab756131733679a8aa9460bf2107b42d33a216) Turned off inclusion of shivs (@davetgreen)
+- [6134ab9](https://github.com/mkdo/kapow-grunt/commit/6134ab9620356c6d6167dc5582bcb00ab9cfa8b1) Added grunt sync (@davetgreen)
+- [0b6a7cd](https://github.com/mkdo/kapow-grunt/commit/0b6a7cd216eea1aed6af85d85f10fd7e17a4ab86) Changed processor order (@davetgreen)
+- [d196bce](https://github.com/mkdo/kapow-grunt/commit/d196bce4cc43ce34d79091b89fdfcc91675e39e7) Create bower.json (@davetgreen)
+- [9399a22](https://github.com/mkdo/kapow-grunt/commit/9399a22bbb33821803a02b3e01953f9b280a1343) Switched to autoprefixer from autoprefixer-core (@davetgreen)
+- [481c750](https://github.com/mkdo/kapow-grunt/commit/481c7503b8b0c37e7f32a287c389efa87885eacd) Updated deps (@davetgreen)
+- [0f468d3](https://github.com/mkdo/kapow-grunt/commit/0f468d36dd0428a8f91f46f3daae7757c3199413) Replaced aggressive merging with compat mode (@davetgreen)
+- [a130903](https://github.com/mkdo/kapow-grunt/commit/a130903c5e5d6be752e25339cde1e386db0b2334) Disabled agressive merging (@davetgreen)
+- [24c99cf](https://github.com/mkdo/kapow-grunt/commit/24c99cf360910cffd175c2235cf206eb9500558f) Added pixrem support (@davetgreen)
+- [3aa22e6](https://github.com/mkdo/kapow-grunt/commit/3aa22e63f78ccca4852cc3dad6b9d39971d6c4fc) Update README.md (@davetgreen)
+- [2e1df09](https://github.com/mkdo/kapow-grunt/commit/2e1df091e5f4443a81dd68243f31e13d3a7d0d98) Update README.md (@davetgreen)
+- [0ddd9db](https://github.com/mkdo/kapow-grunt/commit/0ddd9dbb8d0218e003a1af881f91e86d0585c7f4) Update README.md (@davetgreen)
+- [5121ece](https://github.com/mkdo/kapow-grunt/commit/5121ece8b79b3364b4b0e5f82f0644dcd6ac97ae) Update README.md (@davetgreen)
+- [3d7259f](https://github.com/mkdo/kapow-grunt/commit/3d7259f5aa73dd3a608c093b9b642db85facbc22) Update README.md (@davetgreen)
+- [4f811ff](https://github.com/mkdo/kapow-grunt/commit/4f811ffb6ecf8ac402807c97299c03fea52ace08) Update README.md (@davetgreen)
+- [96f0646](https://github.com/mkdo/kapow-grunt/commit/96f0646eb9bf5ff285722cff8f6d138e92360ca6) Update README.md (@davetgreen)
+- [4c72bf6](https://github.com/mkdo/kapow-grunt/commit/4c72bf6a056e14057ac4a14597a6161b1551e8d0) Update README.md (@davetgreen)
+- [d5c963b](https://github.com/mkdo/kapow-grunt/commit/d5c963b5ff4cd406a0d4830faa0ba60fffe8fa8f) Update README.md (@davetgreen)
+- [6f29a68](https://github.com/mkdo/kapow-grunt/commit/6f29a6839afef1d7494460c0b8c2fcd003a655f2) Updated inline documentation (@davetgreen)
+- [51ad8a1](https://github.com/mkdo/kapow-grunt/commit/51ad8a13fd0adb87a1ab17e516dc5ad9da111763) Updated NPM manifest (@davetgreen)
+- [f27c61c](https://github.com/mkdo/kapow-grunt/commit/f27c61c0258cf32bafa34c59599badbb9c1a4722) Correcting minor syntax errors causing build to fail (@davetgreen)
+- [4958b31](https://github.com/mkdo/kapow-grunt/commit/4958b3118bcc64cc9740dfd501a5ec04aac8450b) Update README.md (@davetgreen)
+- [49b6205](https://github.com/mkdo/kapow-grunt/commit/49b6205bf49f29646f8f1e8cce717d4a43c74b0e) Update watch.js (@davetgreen)
+- [49e1960](https://github.com/mkdo/kapow-grunt/commit/49e1960a5e97e8d8d36de01924bf8b582f06bcb3) Update README.md (@davetgreen)
+- [0d34303](https://github.com/mkdo/kapow-grunt/commit/0d343033bb7029d5fee99da1d6a3a81e0e33c3a4) Added support for editor and admin scss fils (@davetgreen)
+- [abe4926](https://github.com/mkdo/kapow-grunt/commit/abe492604d5269c37591134ea48f62913ec95359) Silenced SCSS Lint (@davetgreen)
+- [ee20894](https://github.com/mkdo/kapow-grunt/commit/ee20894163b5f5e60d028f43a7ee4a076ef84422) Various updates and housekeeping/reformatting (@davetgreen)
+- [3df7c32](https://github.com/mkdo/kapow-grunt/commit/3df7c3256a16426a6394b9cb3e24438d3a0149cf) A little formatting (@davetgreen)
+- [014f87b](https://github.com/mkdo/kapow-grunt/commit/014f87b921bf261f6c05e3a9bf4ccc07324d3ca0) Update CONTRIBUTING.md (@davetgreen)
+- [8ced39b](https://github.com/mkdo/kapow-grunt/commit/8ced39bc9629fac57933172b4f2cca6d81551d7e) Create CONTRIBUTING.md (@davetgreen)
+- [8453512](https://github.com/mkdo/kapow-grunt/commit/8453512b3eea0223d45d57be594e2a99485f9201) Update package.json (@davetgreen)
+- [b76a6ca](https://github.com/mkdo/kapow-grunt/commit/b76a6caacb0982dba05add9615ee316a2aaf1025) Added missing commas (@davetgreen)
+- [ca4069d](https://github.com/mkdo/kapow-grunt/commit/ca4069d1376525765ea5669f4fcc1cc7e5d11e80) Added timestamp to sprite (@davetgreen)
+- [d18ec93](https://github.com/mkdo/kapow-grunt/commit/d18ec93c9badaf592dce7befe3fba0502d5210fc) Added support for the IE only JS file (@davetgreen)
+- [e51b5e3](https://github.com/mkdo/kapow-grunt/commit/e51b5e3da01695f5081b169ef63f24f90b8bc986) Housekeeping, turned JS sourcemaps on, added second header JS file for legacy IE (@davetgreen)
+- [32d400e](https://github.com/mkdo/kapow-grunt/commit/32d400e26da6e9d79fb6d9529ad7f23abb8ef07e) Upgraded deps (@davetgreen)
+- [48d16b2](https://github.com/mkdo/kapow-grunt/commit/48d16b2b2bec9ebba4b0c69224259029e458ee6e) Added path to theme image folder so sprite path doesn't break (@davetgreen)
+- [fb24da6](https://github.com/mkdo/kapow-grunt/commit/fb24da6636b7870654e4de35f282f152fd958c08) Update clean.js (@davetgreen)
+- [09c501e](https://github.com/mkdo/kapow-grunt/commit/09c501eff579da230e1f23b9cb37956b9fc60374) Update concat.js (@davetgreen)
+- [fd02a6e](https://github.com/mkdo/kapow-grunt/commit/fd02a6eb9319e8bdb5d83661688509361c48af82) Update clean.js (@davetgreen)
+- [41c5940](https://github.com/mkdo/kapow-grunt/commit/41c5940df88f0001915d3332b0cac85d79c0266d) Update sprite.js (@davetgreen)
+- [ba6b6b6](https://github.com/mkdo/kapow-grunt/commit/ba6b6b69019df1180f3dc906f4ff12ec893b7e00) Update jshint.js (@davetgreen)
+- [94e4293](https://github.com/mkdo/kapow-grunt/commit/94e429310927241535ce26e33d79298bc9c7889f) Update package.json (@davetgreen)
+- [5b7d9e4](https://github.com/mkdo/kapow-grunt/commit/5b7d9e453499a8dc4522527f64675d0d1838d4c3) Update package.json (@davetgreen)
+- [97c5665](https://github.com/mkdo/kapow-grunt/commit/97c5665fc0a9f89a4cc2d45fefe4d0439d1c57b7) Update gruntfile.js (@davetgreen)
+- [34e752d](https://github.com/mkdo/kapow-grunt/commit/34e752dac6e29d97657b7c449ada4913a6798597) Update package.json (@davetgreen)
+- [ba2ae5f](https://github.com/mkdo/kapow-grunt/commit/ba2ae5fe9ecfa6272f503a6cbcc1930e22387621) Update README.md (@davetgreen)
+- [796d4d8](https://github.com/mkdo/kapow-grunt/commit/796d4d8f06362152818915bb6c868842c0d0d9c8) Merge branch 'master' of github.com:davetgreen/kapow-grunt
+- [7f0a83f](https://github.com/mkdo/kapow-grunt/commit/7f0a83fca7021c941f18294ad67f3af0be04debf) Changed default documentation path to avoid confusion with htdocs
+- [02f53bd](https://github.com/mkdo/kapow-grunt/commit/02f53bdacb57c3ec75d8680bfdfd01dbfceb8748) Update README.md (@davetgreen)
+- [721b946](https://github.com/mkdo/kapow-grunt/commit/721b946ba3f004b2d14592a89a7dd06f418ec00b) Update README.md (@davetgreen)
+- [86b369f](https://github.com/mkdo/kapow-grunt/commit/86b369f3da0cae6e050e917e731d9832664e9007) Update README.md (@davetgreen)
+- [5eb4ff7](https://github.com/mkdo/kapow-grunt/commit/5eb4ff7eafc1960b1f651c6ee1341ef3c831e76d) Update README.md (@davetgreen)
+- [e549670](https://github.com/mkdo/kapow-grunt/commit/e5496708a369866f92974c1ee907e72731581a81) Turned on source mapping for minified CSS.
+- [cad16f9](https://github.com/mkdo/kapow-grunt/commit/cad16f9ce056910f02b8783e680aa3acc1f7f4f9) Update README.md (@davetgreen)
+- [d324180](https://github.com/mkdo/kapow-grunt/commit/d324180983dd068f5d1165f0630fb3182b2e7983) Update README.md (@davetgreen)
+- [572c9fe](https://github.com/mkdo/kapow-grunt/commit/572c9fe4f3972ca55f0e48320541222cea58f56e) Update README.md (@davetgreen)
+- [4eb8a3a](https://github.com/mkdo/kapow-grunt/commit/4eb8a3adeb7b3ffe96bad450429fb150abb181a4) Made several tasks more uniform in the way they handle src and dest.
+- [79b14e6](https://github.com/mkdo/kapow-grunt/commit/79b14e6a9b0c1e59b7e98f19945560b36e2cae77) Minor correction.
+- [6f9bbcd](https://github.com/mkdo/kapow-grunt/commit/6f9bbcd989069c00360d5e49a10cf5430e0e755a) Derp - missing comma.
+- [4d88e42](https://github.com/mkdo/kapow-grunt/commit/4d88e425add3e9727dc099972a191151f4363ef4) Added sass/css file name property.
+- [1f7696c](https://github.com/mkdo/kapow-grunt/commit/1f7696c9b86ce19e8344f4f3cc38ba5ffba8c4f0) Updated watch task to reflect jshint changes.
+- [e0d99bd](https://github.com/mkdo/kapow-grunt/commit/e0d99bda6fe0800f61e242ab35fb51cfff9a7ae4) Removed second jshint run and moved linting to the start of the default build.
+- [d2f8ace](https://github.com/mkdo/kapow-grunt/commit/d2f8ace1a6ad31a66eb1f11b38cf07c00801d18f) Tweak to spritesmith in watch task.
+- [9120780](https://github.com/mkdo/kapow-grunt/commit/91207809c51b90b4ad627bd64a8a19664b5c59c5) Testing, commenting, features etc.
+- [8937cb8](https://github.com/mkdo/kapow-grunt/commit/8937cb8230645ba12f7431ff5e3acea712dc6c82) Started testing/debugging initial task configurations.
+- [a28de62](https://github.com/mkdo/kapow-grunt/commit/a28de62106c11453ad88775a1b9ac2ca48a26fbd) Added iniital aliases set-up.
+- [1556967](https://github.com/mkdo/kapow-grunt/commit/15569675257a1e06a64a8a1b95b6bf65c514a041) Corrected path error.
+- [ca1fa86](https://github.com/mkdo/kapow-grunt/commit/ca1fa86e04f110bcbc4fa749013d15e30ee1c701) Added spritegen
+- [42658c2](https://github.com/mkdo/kapow-grunt/commit/42658c26fa34b035a09efa3c33d53738aa3017f8) Updated package.
+- [bb2ceb3](https://github.com/mkdo/kapow-grunt/commit/bb2ceb3458776e9bb5e0b5643ce4728c0bb34c15) Added Gruntfile.
+- [1c4fa74](https://github.com/mkdo/kapow-grunt/commit/1c4fa7458e901760c47daeff2a004a5de51263bc) Initial task creation - pending testing.
+- [e6c0147](https://github.com/mkdo/kapow-grunt/commit/e6c014756d1b019f439110f93a0ec34f6c5aefd3) Started adding tasks.
+- [79a3096](https://github.com/mkdo/kapow-grunt/commit/79a3096b3808d48860d135f84d391a29746ad02c) Create package.json (@davetgreen)
+- [338863e](https://github.com/mkdo/kapow-grunt/commit/338863ee6bf2fe0c1bb072f27905841c0824572c) Update README.md (@davetgreen)
+- [6e54edd](https://github.com/mkdo/kapow-grunt/commit/6e54edd3499b3466cff9c7b90cb8618b9f062eee) Update README.md (@davetgreen)
+- [a77b75d](https://github.com/mkdo/kapow-grunt/commit/a77b75d455c5181fa4ab80caa1421b902d92f9c8) Initial commit (@davetgreen)
