@@ -87,6 +87,7 @@ module.exports = {
 			"copy:unminified_css",
 			// 'legacy-browsers',
 			'copy:sourcemaps',
+			'clean',
 			// 'sassdoc',
 			'notify:styles'
 		]
