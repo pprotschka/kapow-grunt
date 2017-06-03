@@ -1,6 +1,8 @@
 ## Change Log
 
-### v2.0.0 02/06/2017
+### v2.0.0 03/06/2017
+- [874e83b](https://github.com/mkdo/kapow-grunt/commit/874e83ba530b5632e5a7b7a293a937087eebfa9e) Missing clean task when rebuilding styles on watch. (@davetgreen)
+- [f120238](https://github.com/mkdo/kapow-grunt/commit/f12023888eb3731c1118d51628271bd149409c4f) Updated CHANGELOG (@davetgreen)
 - [5e3dbfe](https://github.com/mkdo/kapow-grunt/commit/5e3dbfe247e17086e10d9cddab731ce9ff39c979) Update README, completes inline and repository docs. Closes #15 (@davetgreen)
 - [16ecfab](https://github.com/mkdo/kapow-grunt/commit/16ecfaba2730066164625a61eb92fe0d21d973e2) Inline file docs updated, minor tweaks. (@davetgreen)
 - [35af2c3](https://github.com/mkdo/kapow-grunt/commit/35af2c3311e688e6ce300c37dca90a9e132cfd1b) Changes to resolve several linting issues. (@davetgreen)
