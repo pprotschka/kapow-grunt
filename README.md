@@ -1,3 +1,5 @@
+![Kapow! Logo Banner](https://raw.githubusercontent.com/kapow-wp/kapow-grunt/master/kapow-full-logo-x2.png)
+
 # Kapow! Grunt
 
 The Grunt component of the Kapow! boilerplate for bespoke WordPress site development.
