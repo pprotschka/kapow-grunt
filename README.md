@@ -1,5 +1,7 @@
 ![Kapow! Logo Banner](https://raw.githubusercontent.com/kapow-wp/kapow-grunt/master/kapow-full-logo-x2.png)
 
+**DEVELOPMENT ON THIS MODULE HAS BEEN FROZEN - A WEBPACK ALTERNATIVE IS IN DEVELOPMENT**
+
 # Kapow! Grunt
 
 The Grunt component of the Kapow! boilerplate for bespoke WordPress site development.
