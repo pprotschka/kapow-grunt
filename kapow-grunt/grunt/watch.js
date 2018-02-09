@@ -61,6 +61,7 @@ module.exports = {
 			// 'eslint',
 			'modernizr',
 			'concat',
+			'babel',
 			'uglify',
 			'clean',
 			// 'jsdoc',
